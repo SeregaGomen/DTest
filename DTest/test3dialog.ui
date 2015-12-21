@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Test3Dialog</class>
+ <widget class="QDialog" name="Test3Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Шкала депрессии Бека </string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-2086</y>
+        <width>1053</width>
+        <height>2637</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_50">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>1.</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb1_2">
+            <property name="text">
+             <string>Я расстроен</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb1_1">
+            <property name="text">
+             <string>Я не чувствую себя расстроенным, печальным</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb1_3">
+            <property name="text">
+             <string>Я все время расстроен и не могу от этого отключиться</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb1_4">
+            <property name="text">
+             <string>Я настолько расстроен и несчастлив, что не могу это выдержать</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>2. </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb2_1">
+            <property name="text">
+             <string>Я не тревожусь о своем будущем</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb2_2">
+            <property name="text">
+             <string>Я чувствую, что озадачен будущим</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb2_3">
+            <property name="text">
+             <string>Я чувствую, что меня ничего не ждет в будущем</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb2_4">
+            <property name="text">
+             <string>Мое будущее безнадежно, и ничто не может измениться к лучшему</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>3.</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb3_1">
+            <property name="text">
+             <string>Я не чувствую себя неудачником</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb3_2">
+            <property name="text">
+             <string>Я чувствую, что терпел больше неудач, чем другие люди</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb3_3">
+            <property name="text">
+             <string>Когда я оглядываюсь на свою жизнь, я вижу в ней много неудач</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb3_4">
+            <property name="text">
+             <string>Я чувствую, что как личность я - полный неудачник</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_66">
+         <property name="title">
+          <string>4. </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_44">
+          <item>
+           <widget class="QRadioButton" name="rb4_1">
+            <property name="text">
+             <string>Я получаю столько же удовлетворения от жизни, как раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_2">
+            <property name="text">
+             <string>Я не получаю столько же удовлетворения от жизни, как раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_3">
+            <property name="text">
+             <string>Я больше не получаю удовлетворения ни от чего</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_4">
+            <property name="text">
+             <string>Я полностью не удовлетворен жизнью и мне все надоело</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_65">
+         <property name="title">
+          <string>5.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_43">
+          <item>
+           <widget class="QRadioButton" name="rb5_1">
+            <property name="text">
+             <string>Я не чувствую себя в чем-нибудь виноватым</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_2">
+            <property name="text">
+             <string>Достаточно часто я чувствую себя виноватым</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_3">
+            <property name="text">
+             <string>Большую часть времени я чувствую себя виноватым</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_4">
+            <property name="text">
+             <string>Я постоянно испытываю чувство вины</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_58">
+         <property name="title">
+          <string>6. </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_36">
+          <item>
+           <widget class="QRadioButton" name="rb6_1">
+            <property name="text">
+             <string>Я не чувствую, что могу быть наказанным за что-либо</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_2">
+            <property name="text">
+             <string>Я чувствую, что могу быть наказан</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_3">
+            <property name="text">
+             <string>Я ожидаю, что могу быть наказан</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_4">
+            <property name="text">
+             <string>Я чувствую себя уже наказанным</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_67">
+         <property name="title">
+          <string>7. </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_45">
+          <item>
+           <widget class="QRadioButton" name="rb7_1">
+            <property name="text">
+             <string>Я не разочаровался в себе</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb7_2">
+            <property name="text">
+             <string>Я разочаровался в себе</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb7_3">
+            <property name="text">
+             <string>Я себе противен</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb7_4">
+            <property name="text">
+             <string>Я себя ненавижу</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_47">
+         <property name="title">
+          <string>8.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_25">
+          <item>
+           <widget class="QRadioButton" name="rb8_1">
+            <property name="text">
+             <string>Я знаю, что я не хуже других</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_2">
+            <property name="text">
+             <string>Я критикую себя за ошибки и слабости</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_3">
+            <property name="text">
+             <string>Я все время обвиняю себя за свои поступки</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_4">
+            <property name="text">
+             <string>Я виню себя во всем плохом, что происходит</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_39">
+         <property name="title">
+          <string>9.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <item>
+           <widget class="QRadioButton" name="rb9_1">
+            <property name="text">
+             <string>Я никогда не думал покончить с собой</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb9_2">
+            <property name="text">
+             <string>Ко мне приходят мысли покончить с собой, но я не буду их осуществлять</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb9_3">
+            <property name="text">
+             <string>Я хотел бы покончить с собой</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb9_4">
+            <property name="text">
+             <string>Я бы убил себя, если бы представился случай</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_64">
+         <property name="title">
+          <string>10.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_42">
+          <item>
+           <widget class="QRadioButton" name="rb10_1">
+            <property name="text">
+             <string>Я плачу не больше, чем обычно</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb10_2">
+            <property name="text">
+             <string>Сейчас я плачу чаще, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb10_3">
+            <property name="text">
+             <string>Теперь я все время плачу</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb10_4">
+            <property name="text">
+             <string>Раньше я мог плакать, а сейчас не могу, даже если мне хочется</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_48">
+         <property name="title">
+          <string>11.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_26">
+          <item>
+           <widget class="QRadioButton" name="rb11_1">
+            <property name="text">
+             <string>Сейчас я раздражителен не более, чем обычно</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb11_2">
+            <property name="text">
+             <string>Я более легко раздражаюсь, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb11_3">
+            <property name="text">
+             <string>Теперь я постоянно чувствую, что раздражен</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb11_4">
+            <property name="text">
+             <string>Я стал равнодушен к вещам, которые меня раньше раздражали</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_46">
+         <property name="title">
+          <string>12. </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_24">
+          <item>
+           <widget class="QRadioButton" name="rb12_1">
+            <property name="text">
+             <string>Я не утратил интереса к другим людям</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb12_2">
+            <property name="text">
+             <string>Я меньше интересуюсь другими людьми, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb12_3">
+            <property name="text">
+             <string>Я почти потерял интерес к другим людям</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb12_4">
+            <property name="text">
+             <string>Я полностью утратил интерес к другим людям</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_57">
+         <property name="title">
+          <string>13.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_35">
+          <item>
+           <widget class="QRadioButton" name="rb13_1">
+            <property name="text">
+             <string>Я откладываю принятие решения иногда, как и раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb13_2">
+            <property name="text">
+             <string>Я чаще, чем раньше, откладываю принятие решения</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb13_3">
+            <property name="text">
+             <string>Мне труднее принимать решения, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb13_4">
+            <property name="text">
+             <string>Я больше не могу принимать решения</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_45">
+         <property name="title">
+          <string>14.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_23">
+          <item>
+           <widget class="QRadioButton" name="rb14_1">
+            <property name="text">
+             <string>Я не чувствую, что выгляжу хуже, чем обычно</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb14_2">
+            <property name="text">
+             <string>Меня тревожит, что я выгляжу старым и непривлекательным</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb14_3">
+            <property name="text">
+             <string>Я знаю, что в моей внешности произошли существенные изменения, делающие меня непривлекательным</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb14_4">
+            <property name="text">
+             <string>Я знаю, что выгляжу безобразно</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_44">
+         <property name="title">
+          <string>15.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <item>
+           <widget class="QRadioButton" name="rb15_1">
+            <property name="text">
+             <string>Я могу работать так же хорошо, как и раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_2">
+            <property name="text">
+             <string>Мне необходимо сделать дополнительное усилие, чтобы начать делать что-нибудь</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_3">
+            <property name="text">
+             <string>Я с трудом заставляю себя делать что-либо</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_4">
+            <property name="text">
+             <string>Я совсем не могу выполнять никакую работу</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_40">
+         <property name="title">
+          <string>16. </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb16_1">
+            <property name="text">
+             <string>Я сплю так же хорошо, как и раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_2">
+            <property name="text">
+             <string>Сейчас я сплю хуже, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_3">
+            <property name="text">
+             <string>Я просыпаюсь на 1-2 часа раньше, и мне трудно заснуть опять</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_4">
+            <property name="text">
+             <string>Я просыпаюсь на несколько часов раньше обычного и больше не могу заснуть</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_59">
+         <property name="title">
+          <string>17.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_37">
+          <item>
+           <widget class="QRadioButton" name="rb17_1">
+            <property name="text">
+             <string>Я устаю не больше, чем обычно</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_2">
+            <property name="text">
+             <string>Теперь я устаю быстрее, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_3">
+            <property name="text">
+             <string>Я устаю почти от всего, что я делаю</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_4">
+            <property name="text">
+             <string>Я не могу ничего делать из-за усталости</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_38">
+         <property name="title">
+          <string>18.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <item>
+           <widget class="QRadioButton" name="rb18_1">
+            <property name="text">
+             <string>Мой аппетит не хуже, чем обычно</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_2">
+            <property name="text">
+             <string>Мой аппетит стал хуже, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_3">
+            <property name="text">
+             <string>Мой аппетит теперь значительно хуже</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_4">
+            <property name="text">
+             <string>У меня вообще нет аппетита</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_53">
+         <property name="title">
+          <string>19. </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_31">
+          <item>
+           <widget class="QRadioButton" name="rb19_1">
+            <property name="text">
+             <string>В последнее время я не похудел или потеря веса была незначительной</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_2">
+            <property name="text">
+             <string>За последнее время я потерял более 2 кг</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_3">
+            <property name="text">
+             <string>Я потерял более 5 кг</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_4">
+            <property name="text">
+             <string>Я потерял более 7 кr</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_33">
+         <property name="title">
+          <string>20.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QRadioButton" name="rb20_1">
+            <property name="text">
+             <string>Я беспокоюсь о своем здоровье не больше, чем обычно</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_2">
+            <property name="text">
+             <string>Меня тревожат проблемы моего физического здоровья, такие, как боли, расстройство желудка, запоры и т.д.</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_3">
+            <property name="text">
+             <string>Я очень обеспокоен своим физическим состоянием, и мне трудно думать о чем-либо другом</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_4">
+            <property name="text">
+             <string>Я настолько обеспокоен своим физическим состоянием, что больше ни о чем не могу думать</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_32">
+         <property name="title">
+          <string>21. </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QRadioButton" name="rb21_1">
+            <property name="text">
+             <string>В последнее время я не замечал изменения своего интереса к близости</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_2">
+            <property name="text">
+             <string>Меня меньше занимают проблемы близости, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_3">
+            <property name="text">
+             <string>Сейчас я значительно меньше интересуюсь межполовыми отношениями, чем раньше</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_4">
+            <property name="text">
+             <string>Я полностью утратил либидо интерес</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Test3Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Test3Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

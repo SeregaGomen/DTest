@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Test4Dialog</class>
+ <widget class="QDialog" name="Test4Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Діяльнісно-операційний тест</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-389</y>
+        <width>1053</width>
+        <height>2958</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_50">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>1. У вас есть регулярная ежедневная схема питания?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb1_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb1_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>2. Вы строго соблюдаете диету?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb2_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb2_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>3. Чувствуете ли вы себя неловко, если нарушаете диету хотя бы раз?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb3_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb3_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_66">
+         <property name="title">
+          <string>4. Есть ли у вас привычка подсчитывать калории во всех продуктах, которые вы едите, даже если вы не на диете?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_44">
+          <item>
+           <widget class="QRadioButton" name="rb4_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_65">
+         <property name="title">
+          <string>5. Отказывались ли вы полностью от пищи в течении целого дня? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_43">
+          <item>
+           <widget class="QRadioButton" name="rb5_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_58">
+         <property name="title">
+          <string>6. Если да, то как часто происходит подобное?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_36">
+          <item>
+           <widget class="QRadioButton" name="rb6_1">
+            <property name="text">
+             <string>Через день </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_2">
+            <property name="text">
+             <string>2-3 раза в неделю </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_3">
+            <property name="text">
+             <string>Раз в неделю </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_4">
+            <property name="text">
+             <string>Иногда</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_5">
+            <property name="text">
+             <string>Единичный случай</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_67">
+         <property name="title">
+          <string>7. Вы делаете что-либо из указанного ниже, чтобы сбросить вес?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="title">
+             <string>Принимаю таблетки для похудения</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QRadioButton" name="rb7_1_1">
+               <property name="text">
+                <string>Никогда</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_1_2">
+               <property name="text">
+                <string>Иногда</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_1_3">
+               <property name="text">
+                <string>Раз в неделю</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_1_4">
+               <property name="text">
+                <string>2-3 раза в неделю</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_1_5">
+               <property name="text">
+                <string>Ежедневно</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_1_6">
+               <property name="text">
+                <string>2-3 раза в день</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_1_7">
+               <property name="text">
+                <string>Более 5 раз в день</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+            <zorder>rb7_1_5</zorder>
+            <zorder>rb7_1_4</zorder>
+            <zorder>rb7_1_2</zorder>
+            <zorder>rb7_1_1</zorder>
+            <zorder>rb7_1_3</zorder>
+            <zorder>rb7_1_6</zorder>
+            <zorder>rb7_1_7</zorder>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_6">
+            <property name="title">
+             <string>Принимаю мочегонные средства</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QRadioButton" name="rb7_2_1">
+               <property name="text">
+                <string>Никогда</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_2_2">
+               <property name="text">
+                <string>Иногда</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_2_3">
+               <property name="text">
+                <string>Раз в неделю</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_2_4">
+               <property name="text">
+                <string>2-3 раза в неделю</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_2_5">
+               <property name="text">
+                <string>Ежедневно</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_2_6">
+               <property name="text">
+                <string>2-3 раза в день</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_2_7">
+               <property name="text">
+                <string>Более 5 раз в день</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_8">
+            <property name="title">
+             <string>Принимаю слабительные средства</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QRadioButton" name="rb7_3_1">
+               <property name="text">
+                <string>Никогда</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_3_2">
+               <property name="text">
+                <string>Иногда</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_3_3">
+               <property name="text">
+                <string>Раз в неделю</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_3_4">
+               <property name="text">
+                <string>2-3 раза в неделю</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_3_5">
+               <property name="text">
+                <string>Ежедневно</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_3_6">
+               <property name="text">
+                <string>2-3 раза в день</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_3_7">
+               <property name="text">
+                <string>Более 5 раз в день</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_7">
+            <property name="title">
+             <string>Вызываю у себя рвоту</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QRadioButton" name="rb7_4_1">
+               <property name="text">
+                <string>Никогда</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_4_2">
+               <property name="text">
+                <string>Иногда</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_4_3">
+               <property name="text">
+                <string>Раз в неделю</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_4_4">
+               <property name="text">
+                <string>2-3 раза в неделю</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_4_5">
+               <property name="text">
+                <string>Ежедневно</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_4_6">
+               <property name="text">
+                <string>2-3 раза в день</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rb7_4_7">
+               <property name="text">
+                <string>Более 5 раз в день</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_47">
+         <property name="title">
+          <string>8. Существенно ли ваша схема питания нарушает ваш привычный образ жизни?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_25">
+          <item>
+           <widget class="QRadioButton" name="rb8_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_39">
+         <property name="title">
+          <string>9. Сказали бы вы, что в вашей жизни главную роль играет еда?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <item>
+           <widget class="QRadioButton" name="rb9_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb9_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_64">
+         <property name="title">
+          <string>10. Вы когда-либо продолжали есть до тех пор, пока не почувствовали физический дискомфорт?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_42">
+          <item>
+           <widget class="QRadioButton" name="rb10_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb10_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_48">
+         <property name="title">
+          <string>11. Бывают ли случаи, когда еда — единственное, о чем вы думаете?	</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_26">
+          <item>
+           <widget class="QRadioButton" name="rb11_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb11_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_46">
+         <property name="title">
+          <string>12. Бывает, что в присутствии других людей вы едите в разумных пределах, а когда остаетесь в одни, то едите больше?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_24">
+          <item>
+           <widget class="QRadioButton" name="rb12_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb12_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_57">
+         <property name="title">
+          <string>13. Если вы захотите, то вы всегда можете прекратить есть?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_35">
+          <item>
+           <widget class="QRadioButton" name="rb13_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb13_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_45">
+         <property name="title">
+          <string>14. Вы когда-либо испытывали непреодолимое желание есть, есть и есть?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_23">
+          <item>
+           <widget class="QRadioButton" name="rb14_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb14_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_44">
+         <property name="title">
+          <string>15. Вы переедаете, когда чувствуете тревогу?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <item>
+           <widget class="QRadioButton" name="rb15_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_40">
+         <property name="title">
+          <string>16. Мысль о том, что вы станете толстым(ой) приводит вас в ужас?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb16_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_59">
+         <property name="title">
+          <string>17. Случается ли такое, что вы быстро съедаете большое количество еды? 	(вне приема пищи) </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_37">
+          <item>
+           <widget class="QRadioButton" name="rb17_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_38">
+         <property name="title">
+          <string>18. Стыдитесь ли вы своей манеры питания?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <item>
+           <widget class="QRadioButton" name="rb18_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_53">
+         <property name="title">
+          <string>19. Боитесь ли вы потерять контроль над тем, сколько вы едите?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_31">
+          <item>
+           <widget class="QRadioButton" name="rb19_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_33">
+         <property name="title">
+          <string>20. Находите ли вы утешение в еде?	</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QRadioButton" name="rb20_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_32">
+         <property name="title">
+          <string>21. Если вы уже наелись, оставите ли вы недоеденную пищу на тарелке?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QRadioButton" name="rb21_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_69">
+         <property name="title">
+          <string>22. Обманываете ли вы людей о том, сколько вы едите?	</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_47">
+          <item>
+           <widget class="QRadioButton" name="rb22_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb22_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_52">
+         <property name="title">
+          <string>23. Зависит ли количество съеденной вами пищи от вашего уровня голода?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_30">
+          <item>
+           <widget class="QRadioButton" name="rb23_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb23_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_68">
+         <property name="title">
+          <string>24. Вы когда-либо переедаете?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_46">
+          <item>
+           <widget class="QRadioButton" name="rb24_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb24_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_29">
+         <property name="title">
+          <string>25. Если да, то чувствуете ли вы себя несчастными после таких случаев переедания?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QRadioButton" name="rb25_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb25_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_31">
+         <property name="title">
+          <string>26. Если вы переедаете, то вы поступаете так только, когда находитесь одни?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QRadioButton" name="rb26_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb26_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_51">
+         <property name="title">
+          <string>27. Если вы переедаете, то как часто?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_29">
+          <item>
+           <widget class="QRadioButton" name="rb27_1">
+            <property name="text">
+             <string>Почти никогда</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb27_2">
+            <property name="text">
+             <string>Раз в месяц</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb27_3">
+            <property name="text">
+             <string>Раз в неделю	</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb27_4">
+            <property name="text">
+             <string>2-3 раза в неделю</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb27_5">
+            <property name="text">
+             <string>Ежедневно</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb27_6">
+            <property name="text">
+             <string>2-3 раза в день</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_49">
+         <property name="title">
+          <string>28. Прилагаете ли вы усилия для удовлетворения своей тяги к перееданию?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_27">
+          <item>
+           <widget class="QRadioButton" name="rb28_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb28_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_37">
+         <property name="title">
+          <string>29. Чувствуете ли вы вину, если переели?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <item>
+           <widget class="QRadioButton" name="rb29_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb29_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_41">
+         <property name="title">
+          <string>30. Вы когда-нибудь едите тайком?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <item>
+           <widget class="QRadioButton" name="rb30_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb30_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_60">
+         <property name="title">
+          <string>31. Считаете ли вы свою манеру питания нормальной?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_38">
+          <item>
+           <widget class="QRadioButton" name="rb31_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb31_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>32. Считаете ли вы себя человеком, который постоянно что-то ест?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb32_1">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb32_2">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_54">
+         <property name="title">
+          <string>33. Изменяется ли ваш вес более чем на 2 кг в течение недели?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_32">
+          <item>
+           <widget class="QRadioButton" name="rb33_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb33_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Test4Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Test4Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

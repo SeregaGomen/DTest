@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Test5Dialog</class>
+ <widget class="QDialog" name="Test5Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Методика оценки биологического возраста В.П. Войтенко</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-1890</y>
+        <width>1053</width>
+        <height>2441</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_50">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>1. Беспокоят ли Вас головные боли?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb1_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb1_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>2. Можно ли сказать, что вы легко просыпаетесь от любого шума?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb2_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb2_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>3. Беспокоят ли Вас боли в области сердца?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb3_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb3_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_66">
+         <property name="title">
+          <string>4. Считаете ли Вы,  что в последние годы у Вас ухудшилось зрение?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_44">
+          <item>
+           <widget class="QRadioButton" name="rb4_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_65">
+         <property name="title">
+          <string>5. Считаете ли Вы, что в последние годы у Вас ухудшился слух?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_43">
+          <item>
+           <widget class="QRadioButton" name="rb5_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_58">
+         <property name="title">
+          <string>6. Стараетесь ли вы пить только кипяченую воду?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_36">
+          <item>
+           <widget class="QRadioButton" name="rb6_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_67">
+         <property name="title">
+          <string>7. Уступают ли вам место в автобусе, троллейбусе, трамвае младшие по возрасту?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QRadioButton" name="rb7_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb7_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_47">
+         <property name="title">
+          <string>8. Беспокоят ли вас боли в суставах?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_25">
+          <item>
+           <widget class="QRadioButton" name="rb8_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_39">
+         <property name="title">
+          <string>9. Бываете ли вы на пляже?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <item>
+           <widget class="QRadioButton" name="rb9_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb9_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_64">
+         <property name="title">
+          <string>10. Влияет ли на ваше самочувствие изменение погоды?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_42">
+          <item>
+           <widget class="QRadioButton" name="rb10_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb10_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_48">
+         <property name="title">
+          <string>11. Бывают ли у вас такие периоды, когда из-за волнений вы теряете сон?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_26">
+          <item>
+           <widget class="QRadioButton" name="rb11_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb11_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_46">
+         <property name="title">
+          <string>12. Беспокоят ли вас запоры?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_24">
+          <item>
+           <widget class="QRadioButton" name="rb12_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb12_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_57">
+         <property name="title">
+          <string>13. Считаете ли вы, что сейчас вы также работоспособны, как и раньше?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_35">
+          <item>
+           <widget class="QRadioButton" name="rb13_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb13_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_45">
+         <property name="title">
+          <string>14. Беспокоят ли вас боли в области печени?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_23">
+          <item>
+           <widget class="QRadioButton" name="rb14_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb14_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_44">
+         <property name="title">
+          <string>15. Бывают ли у вас головокружения?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <item>
+           <widget class="QRadioButton" name="rb15_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_40">
+         <property name="title">
+          <string>16. Считаете ли вы, что сосредоточиться сейчас вам стало труднее, чем в прошлые годы?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb16_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_59">
+         <property name="title">
+          <string>17. Беспокоят ли вас ослабление памяти, забывчивость?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_37">
+          <item>
+           <widget class="QRadioButton" name="rb17_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_38">
+         <property name="title">
+          <string>18. Ощущаете ли вы в различных частях тела жжение, покалывание, &quot;ползание  мурашек&quot;?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <item>
+           <widget class="QRadioButton" name="rb18_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_53">
+         <property name="title">
+          <string>19. Бывают ли у вас такие периоды, когда вы чувствуете себя радостно, возбужденным, счастливым?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_31">
+          <item>
+           <widget class="QRadioButton" name="rb19_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_33">
+         <property name="title">
+          <string>20. Беспокоят ли вас шум или звон в ушах?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QRadioButton" name="rb20_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_32">
+         <property name="title">
+          <string>21. Держите ли вы для себя в домашней аптечке один из следующих медикаментов: валидол, нитроглицерин, сердечные капли? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QRadioButton" name="rb21_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_69">
+         <property name="title">
+          <string>22. Бывают ли у вас отеки на ногах?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_47">
+          <item>
+           <widget class="QRadioButton" name="rb22_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb22_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_52">
+         <property name="title">
+          <string>23. Приходится ли вам отказываться от некоторых блюд?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_30">
+          <item>
+           <widget class="QRadioButton" name="rb23_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb23_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_68">
+         <property name="title">
+          <string>24. Бывает ли у вас одышка при быстрой ходьбе?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_46">
+          <item>
+           <widget class="QRadioButton" name="rb24_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb24_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_29">
+         <property name="title">
+          <string>25. Беспокоят ли вас боли в области поясницы?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QRadioButton" name="rb25_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb25_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_31">
+         <property name="title">
+          <string>26. Приходится ли вам употреблять в любых целях какую-либо  минеральную воду?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QRadioButton" name="rb26_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb26_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_51">
+         <property name="title">
+          <string>27. Беспокоит ли вас неприятный вкус во рту?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_29">
+          <item>
+           <widget class="QRadioButton" name="rb27_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb27_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_49">
+         <property name="title">
+          <string>28. Можно ли сказать, что вы стали легко плакать?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_27">
+          <item>
+           <widget class="QRadioButton" name="rb28_1">
+            <property name="text">
+             <string>Да</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb28_2">
+            <property name="text">
+             <string>Нет</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_37">
+         <property name="title">
+          <string>29. Как вы оцениваете состояние своего здоровья? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <item>
+           <widget class="QRadioButton" name="rb29_1">
+            <property name="text">
+             <string>Хорошее</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb29_2">
+            <property name="text">
+             <string>Удовлетворительное</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb29_3">
+            <property name="text">
+             <string>Плохое</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb29_4">
+            <property name="text">
+             <string>Очень плохое</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_41">
+         <property name="title">
+          <string>Укажите параметры своего самочувствия</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>АДс</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Артериальное давление систолическое</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_13">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>ЗДВ </string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_6">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Задержка дыхания после глубокого  вдоха,  трижды  с интервалом 5 мин., учитывается наибольшая величина в секундах</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_9">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>СБ </string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_2">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Статическая балансировка на левой ноге,  без обуви, глаза закрыты,  руки  опущены</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_10">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>АДп </string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_3">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Пульсовое давление</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_11">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>МТ</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QLineEdit" name="lineEdit_4">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Масса тела в легкой одежде (кг)</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Test5Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Test5Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Test2Dialog</class>
+ <widget class="QDialog" name="Test2Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Опитувальник версії Larocque</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1053</width>
+        <height>1035</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_50">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>1. Вспомните свой последний прием пищи и попытайтесь оценить количество времени, которое занимает одно блюдо?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb1_4">
+            <property name="text">
+             <string>От 20 до 30 минут </string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb1_3">
+            <property name="text">
+             <string>От 10 до 20 минут </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb1_2">
+            <property name="text">
+             <string>От 5 до 10 минут</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb1_1">
+            <property name="text">
+             <string>Менее 5 минут </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb1_5">
+            <property name="text">
+             <string>Более 30 минут</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>2. Проходя мимо тарелки с фруктами, едой или конфетами, как часто вы берете с нее что-либо?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb2_3">
+            <property name="text">
+             <string>Иногда </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb2_1">
+            <property name="text">
+             <string>Всегда </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb2_2">
+            <property name="text">
+             <string>Довольно часто </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb2_4">
+            <property name="text">
+             <string>Никогда</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>3. В глубине души вы верите, что сможете достичь желаемого веса, а потом поддерживать его на том же уровне?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb3_3">
+            <property name="text">
+             <string>Вероятно</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb3_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb3_2">
+            <property name="text">
+             <string>Возможно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb3_4">
+            <property name="text">
+             <string>Безусловно</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_66">
+         <property name="title">
+          <string>4. Если вы потеряете лишь половину веса, которого вы планировали потерять за этот месяц, как вы думаете: вы продолжите соблюдать диету?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_44">
+          <item>
+           <widget class="QRadioButton" name="rb4_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_2">
+            <property name="text">
+             <string>Возможно </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_3">
+            <property name="text">
+             <string>Вероятно </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_4">
+            <property name="text">
+             <string>Безусловно</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_65">
+         <property name="title">
+          <string>5. В течение последнего месяца у вас наблюдались следующие симптомы, когда вы не испытывали физической нагрузки: учащенное сердцебиение, комок в горле или одышка:</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_43">
+          <item>
+           <widget class="QRadioButton" name="rb5_1">
+            <property name="text">
+             <string>никогда </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_2">
+            <property name="text">
+             <string>иногда </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_3">
+            <property name="text">
+             <string>часто (в среднем раз в неделю) </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_4">
+            <property name="text">
+             <string>очень часто (несколько раз в неделю)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_58">
+         <property name="title">
+          <string>6. В течение последнего месяца у вас наблюдались какие-либо из перечисленных симптомов, которые вы не можете отнести к болезни: головная боль, боль в пояснице, боль в шее.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_36">
+          <item>
+           <widget class="QRadioButton" name="rb6_1">
+            <property name="text">
+             <string>Никогда </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_2">
+            <property name="text">
+             <string>Иногда </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_3">
+            <property name="text">
+             <string>В среднем раз в неделю </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_4">
+            <property name="text">
+             <string>Чаще, чем раз в неделю</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_67">
+         <property name="title">
+          <string>7. Я чувствую, что жизнь ведет меня в никуда и что она ничего не стоит.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_45">
+          <item>
+           <widget class="QRadioButton" name="rb7_1">
+            <property name="text">
+             <string>Я так и говорю </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb7_2">
+            <property name="text">
+             <string>Я часто так думаю </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb7_3">
+            <property name="text">
+             <string>Я иногда так думаю </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb7_4">
+            <property name="text">
+             <string>Я никогда так не думаю</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_47">
+         <property name="title">
+          <string>8. Я обычно не занимаюсь спортом, но если я занимаюсь спортом, то только когда я уверен(а), что у меня это получится.</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_25">
+          <item>
+           <widget class="QRadioButton" name="rb8_1">
+            <property name="text">
+             <string>Да, именно так </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_2">
+            <property name="text">
+             <string>Часто я так к этому и отношусь </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_3">
+            <property name="text">
+             <string>Иногда я так к этому и отношусь </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_4">
+            <property name="text">
+             <string>Нет, ко мне такое не относится</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Test2Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Test2Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

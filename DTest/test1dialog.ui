@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Test1Dialog</class>
+ <widget class="QDialog" name="Test1Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Діяльнісно-операційний тест</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-3231</y>
+        <width>1053</width>
+        <height>4515</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_50">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>1. Чи часто Ви Відчуваєте потяг до нових вражень, для того щоб стрепенутися, відчути збудженість?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb1_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb1_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>2. Чи часто Ви маєте потребу в друзях, які Вас розуміють, можуть втішити? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb2_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb2_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>3. Ви людина безпечна? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb3_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb3_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_66">
+         <property name="title">
+          <string>4. Чи не знаходите Ви, що Вам важко відповідати &quot;ні&quot;? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_44">
+          <item>
+           <widget class="QRadioButton" name="rb4_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb4_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_65">
+         <property name="title">
+          <string>5. Чи задумуєтесь Ви перед тим, як що-небудь розпочати? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_43">
+          <item>
+           <widget class="QRadioButton" name="rb5_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb5_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_58">
+         <property name="title">
+          <string>6. Якщо Ви обіцяєте що-небудь зробити, то чи завжди дотримуєте свої обіцянки (незалежно від того зручно Вам чи ні)? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_36">
+          <item>
+           <widget class="QRadioButton" name="rb6_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb6_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_67">
+         <property name="title">
+          <string>7. Чи часто у Вас бувають спади та підйоми настрою? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_45">
+          <item>
+           <widget class="QRadioButton" name="rb7_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb7_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_47">
+         <property name="title">
+          <string>8. Звичайно Ви дієте і говорите швидко (не задумуючись)? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_25">
+          <item>
+           <widget class="QRadioButton" name="rb8_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb8_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_39">
+         <property name="title">
+          <string>9. Чи часто Ви почуваєте себе нещасною людиною без достатніх на це причин? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <item>
+           <widget class="QRadioButton" name="rb9_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb9_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_64">
+         <property name="title">
+          <string>10. Зробили б Ви все, що потрібно на спір? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_42">
+          <item>
+           <widget class="QRadioButton" name="rb10_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb10_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_48">
+         <property name="title">
+          <string>11. Виникає у Вас почуття нерішучості і ніяковості, якщо Ви хочете завести мову з симпатичною(ним) не-знайомкою(цем)? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_26">
+          <item>
+           <widget class="QRadioButton" name="rb11_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb11_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_46">
+         <property name="title">
+          <string>12. Чи виходите Ви інколи &quot;з себе&quot;, сердитесь? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_24">
+          <item>
+           <widget class="QRadioButton" name="rb12_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb12_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_57">
+         <property name="title">
+          <string>13. Чи часто Ви дієте під впливом хвилинного настрою? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_35">
+          <item>
+           <widget class="QRadioButton" name="rb13_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb13_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_45">
+         <property name="title">
+          <string>14. Чи часто Ви занепокоєні через те, що зробили, або сказали що-небудь таке, чого б не потрібно було робити або говорити? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_23">
+          <item>
+           <widget class="QRadioButton" name="rb14_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb14_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_44">
+         <property name="title">
+          <string>15. Віддаєте Ви перевагу книзі перед зустрічами з людьми? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <item>
+           <widget class="QRadioButton" name="rb15_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_40">
+         <property name="title">
+          <string>16. Чи легко Вас образити? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb16_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_59">
+         <property name="title">
+          <string>17. Чи любите Ви часто бувати в компанії? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_37">
+          <item>
+           <widget class="QRadioButton" name="rb17_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_38">
+         <property name="title">
+          <string>18. Чи бувають у Вас інколи думки, які б Ви хотіли приховати від інших?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <item>
+           <widget class="QRadioButton" name="rb18_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_53">
+         <property name="title">
+          <string>19. Чи правда, що Ви інколи повні енергії, так що все горить в руках, а інколи зовсім кволі? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_31">
+          <item>
+           <widget class="QRadioButton" name="rb19_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_33">
+         <property name="title">
+          <string>20. Чи віддаєте Ви перевагу мати менше друзів, але зате більш близьких Вам? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QRadioButton" name="rb20_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_32">
+         <property name="title">
+          <string>21. Чи часто Ви мрієте? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QRadioButton" name="rb21_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_69">
+         <property name="title">
+          <string>22. Коли на Вас кричать, Ви відповідаєте тим же? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_47">
+          <item>
+           <widget class="QRadioButton" name="rb22_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb22_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_52">
+         <property name="title">
+          <string>23. Чи часто Вас турбує почуття вини? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_30">
+          <item>
+           <widget class="QRadioButton" name="rb23_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb23_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_68">
+         <property name="title">
+          <string>24. Чи всі Ваші звички хороші і бажані? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_46">
+          <item>
+           <widget class="QRadioButton" name="rb24_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb24_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_29">
+         <property name="title">
+          <string>25. Чи здатні Ви дати почуттям волю? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QRadioButton" name="rb25_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb25_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_31">
+         <property name="title">
+          <string>26. Вважаєте Ви себе людиною чутливою? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QRadioButton" name="rb26_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb26_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_51">
+         <property name="title">
+          <string>27. Чи вважають Вас людиною веселою і живою? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_29">
+          <item>
+           <widget class="QRadioButton" name="rb27_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb27_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_49">
+         <property name="title">
+          <string>28. Чи часто, зробивши яку не будь важливу справу, Ви відчуваєте, що могли б зробити її краще? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_27">
+          <item>
+           <widget class="QRadioButton" name="rb28_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb28_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_37">
+         <property name="title">
+          <string>29. Ви більше мовчите, коли знаходитесь в товаристві інших людей? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <item>
+           <widget class="QRadioButton" name="rb29_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb29_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_41">
+         <property name="title">
+          <string>30. Ви інколи пліткуєте? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <item>
+           <widget class="QRadioButton" name="rb30_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb30_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_60">
+         <property name="title">
+          <string>31. Чи буває, що Вам не спиться через те, що різні думки лізуть в голову? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_38">
+          <item>
+           <widget class="QRadioButton" name="rb31_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb31_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>32. Якщо Ви хочете дізнатись про що-небудь, то Ви краще прочитаєте про це в книзі, ніж спитаєте? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb32_1">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb32_2">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_54">
+         <property name="title">
+          <string>33. Чи буває у Вас прискорене серцебиття? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_32">
+          <item>
+           <widget class="QRadioButton" name="rb33_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb33_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_30">
+         <property name="title">
+          <string>34. Чи подобається Вам робота, яка потребує від Вас постійної уваги? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QRadioButton" name="rb34_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb34_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_28">
+         <property name="title">
+          <string>35. Чи бувають у Вас приступи тремтіння? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QRadioButton" name="rb35_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb35_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_50">
+         <property name="title">
+          <string>36. Чи завжди б Ви платили за провезення багажу на транспорті, якби не боялися перевірки? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_28">
+          <item>
+           <widget class="QRadioButton" name="rb36_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb36_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_70">
+         <property name="title">
+          <string>37. Вам неприємно знаходитись у товаристві, коли насміхається товариш над товаришем? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_48">
+          <item>
+           <widget class="QRadioButton" name="rb37_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb37_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="title">
+          <string>38. Ви дратівливі? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb38_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb38_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_61">
+         <property name="title">
+          <string>39. Чи подобається Вам праця, яка потребує швидких дій? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_39">
+          <item>
+           <widget class="QRadioButton" name="rb39_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb39_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_36">
+         <property name="title">
+          <string>40. Чи хвилюєтесь Ви з приводу якихось неприємних подій, які б могли статися? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <item>
+           <widget class="QRadioButton" name="rb40_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb40_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_42">
+         <property name="title">
+          <string>41. Ви ходите повільно і не поспішно? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_20">
+          <item>
+           <widget class="QRadioButton" name="rb41_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb41_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_55">
+         <property name="title">
+          <string>42. Ви інколи запізнювались на зустрічі чи на роботу? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_33">
+          <item>
+           <widget class="QRadioButton" name="rb42_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb42_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_35">
+         <property name="title">
+          <string>43. Чи часто Вам сняться жахи? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <item>
+           <widget class="QRadioButton" name="rb43_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb43_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_7">
+         <property name="title">
+          <string>44. Вірно, що Ви так любите поговорити, що ніколи не пропускаєте випадок поговорити з незнайомою людиною? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb44_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb44_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_63">
+         <property name="title">
+          <string>45. Чи хвилюють Вас які-небудь болі? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_41">
+          <item>
+           <widget class="QRadioButton" name="rb45_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb45_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_34">
+         <property name="title">
+          <string>46. Ви б почували себе дуже нещасним, якщо на довгий час залишилися б без спілкування з людьми? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <item>
+           <widget class="QRadioButton" name="rb46_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb46_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_71">
+         <property name="title">
+          <string>47. Чи можете Ви назвати себе нервовою людиною? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_49">
+          <item>
+           <widget class="QRadioButton" name="rb47_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb47_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_62">
+         <property name="title">
+          <string>48. Чи є серед Ваших знайомих люди, які Вам не подобаються? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_40">
+          <item>
+           <widget class="QRadioButton" name="rb48_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb48_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_56">
+         <property name="title">
+          <string>49. Чи можете Ви сказати, що Ви цілком впевнена в собі людина? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_34">
+          <item>
+           <widget class="QRadioButton" name="rb49_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb49_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_43">
+         <property name="title">
+          <string>50. Чи легко Ви ображаєтесь, коли люди вказують на Ваші особисті помилки в роботі, або на Ваші промахи? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_21">
+          <item>
+           <widget class="QRadioButton" name="rb50_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb50_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="title">
+          <string>51. Ви вважаєте, що важко одержати явне задоволення від вечірки? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb51_1">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb51_2">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_9">
+         <property name="title">
+          <string>52. Чи занепокоює Вас відчуття, що Ви чимось гірші від інших? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb52_1">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb52_2">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="title">
+          <string>53. Чи легко Вам внести пожвавлення в скучну компанію? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb53_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb53_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_11">
+         <property name="title">
+          <string>54. Чи буває, що Ви говорите про речі, в яких не розбираєтесь? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QRadioButton" name="rb54_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb54_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_13">
+         <property name="title">
+          <string>55. Чи занепокоєні Ви своїм здоров'ям? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QRadioButton" name="rb55_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb55_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_26">
+         <property name="title">
+          <string>56. Чи любите Ви пожартувати над іншими? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QRadioButton" name="rb56_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb56_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_27">
+         <property name="title">
+          <string>57. Чи страждаєте Ви від безсоння? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QRadioButton" name="rb57_1">
+            <property name="text">
+             <string>Так</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb57_2">
+            <property name="text">
+             <string>Ні</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Test1Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Test1Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
