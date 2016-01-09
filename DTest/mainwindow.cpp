@@ -47,6 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
+    delete sdlg;
     delete ui;
 }
 
@@ -216,10 +217,7 @@ void MainWindow::slotTest1(void)
 
    sdlg->initDialog();
    if (sdlg->exec() != QDialog::Accepted)
-   {
-       delete sdlg;
        return;
-   }
 
    dlg = new Test1Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
    dlg->exec();
@@ -232,10 +230,7 @@ void MainWindow::slotTest2(void)
 
     sdlg->initDialog();
     if (sdlg->exec() != QDialog::Accepted)
-    {
-        delete sdlg;
         return;
-    }
 
     dlg = new Test2Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
     dlg->exec();
@@ -248,10 +243,7 @@ void MainWindow::slotTest3(void)
 
     sdlg->initDialog();
     if (sdlg->exec() != QDialog::Accepted)
-    {
-        delete sdlg;
         return;
-    }
 
     dlg = new Test3Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
     dlg->exec();
@@ -264,10 +256,7 @@ void MainWindow::slotTest4(void)
 
     sdlg->initDialog();
     if (sdlg->exec() != QDialog::Accepted)
-    {
-        delete sdlg;
         return;
-    }
 
     dlg = new Test4Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
     dlg->exec();
@@ -280,10 +269,7 @@ void MainWindow::slotTest5(void)
 
     sdlg->initDialog();
     if (sdlg->exec() != QDialog::Accepted)
-    {
-        delete sdlg;
         return;
-    }
 
     dlg = new Test5Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
     dlg->exec();
