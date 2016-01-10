@@ -17,7 +17,8 @@
 #include <math.h>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "getstudentdialog.h"
+#include "getpatientdialog.h"
+#include "test0dialog.h"
 #include "test1dialog.h"
 #include "test2dialog.h"
 #include "test3dialog.h"
@@ -42,7 +43,7 @@ MainWindow::MainWindow(QWidget *parent) :
 //        setWindowIcon(QIcon(":/images/main.png"));
 #endif
 
-    sdlg = new GetStudentDialog(this);
+    sdlg = new GetPatientDialog(this);
 }
 
 MainWindow::~MainWindow()
@@ -91,83 +92,6 @@ bool MainWindow::checkDB(QString fileName)
     return QFile::exists(fileName);
 }
 
-bool MainWindow::createDB(QString fileName)
-{
-    db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName(fileName);
-    setCursor(Qt::WaitCursor);
-    if (!db.open())
-    {
-        setCursor(Qt::ArrowCursor);
-        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
-        return false;
-    }
-    setCursor(Qt::ArrowCursor);
-
-    QSqlQuery query;
-
-    // Создание таблиц
-    // Student
-    if (!query.exec(QString("CREATE TABLE tbl_people (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, f_name TEXT, f_sex TEXT, f_age INTEGER, f_height INTEGER, f_weight INTEGER)")))
-    {
-        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
-        qDebug() << db.lastError();
-        db.close();
-        return false;
-    }
-    // Test1
-    if (!query.exec(QString("CREATE TABLE tbl_test1 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
-    {
-        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
-        qDebug() << db.lastError();
-        db.close();
-        return false;
-    }
-    // Test2
-    if (!query.exec(QString("CREATE TABLE tbl_test2 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
-    {
-        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
-        qDebug() << db.lastError();
-        db.close();
-        return false;
-    }
-    // Test3
-    if (!query.exec(QString("CREATE TABLE tbl_test3 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
-    {
-        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
-        qDebug() << db.lastError();
-        db.close();
-        return false;
-    }
-    // Test4
-    if (!query.exec(QString("CREATE TABLE tbl_test4 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT, f_res1 TEXT)")))
-    {
-        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
-        qDebug() << db.lastError();
-        db.close();
-        return false;
-    }
-    // Test5
-    if (!query.exec(QString("CREATE TABLE tbl_test5 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
-    {
-        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
-        qDebug() << db.lastError();
-        db.close();
-        return false;
-    }
-    // Results
-    if (!query.exec(QString("CREATE TABLE tbl_results (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_id1 INTEGER, f_res11 INTEGER, f_legend11 TEXT, f_res12 INTEGER, f_legend12 TEXT, f_res13 INTEGER, f_legend13 TEXT, f_id2 INTEGER, f_res2 INTEGER, f_legend2 TEXT, f_id3 INTEGER, f_res3 INTEGER, f_legend3 TEXT, f_id4 INTEGER, f_res4 INTEGER, f_legend4 TEXT, f_id5 INTEGER, f_res5 INTEGER, f_legend5 TEXT)")))
-    {
-        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
-        qDebug() << db.lastError();
-        db.close();
-        return false;
-    }
-
-    db.close();
-    return true;
-}
-
 void MainWindow::openDB(void)
 {
     // Проверка наличия БД
@@ -209,6 +133,14 @@ void MainWindow::setupLanguage(void)
     if (dlgTranslator->load(translatorFileName, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         qApp->installTranslator(dlgTranslator);
 
+}
+
+void MainWindow::slotTest0(void)
+{
+    Test0Dialog *dlg = new Test0Dialog(this);;
+
+    dlg->exec();
+    delete dlg;
 }
 
 void MainWindow::slotTest1(void)
@@ -662,4 +594,85 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
         QMessageBox::information(NULL, QObject::tr("Помилка"), QObject::tr("Помилка запису файлу %1").arg(fileName));
         return;
     }
+}
+
+bool MainWindow::createDB(QString fileName)
+{
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName(fileName);
+    setCursor(Qt::WaitCursor);
+    if (!db.open())
+    {
+        setCursor(Qt::ArrowCursor);
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        return false;
+    }
+    setCursor(Qt::ArrowCursor);
+
+    QSqlQuery query;
+
+    // Создание таблиц
+    // Student
+    if (!query.exec(QString("CREATE TABLE tbl_people (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, f_name TEXT, f_sex TEXT, f_age INTEGER, f_height INTEGER, f_weight INTEGER, \
+                                                      f_ads INTEGER, f_add INTEGER, f_balancing INTEGER, f_holding INTEGER, f_merried TEXT, f_profit TEXT, f_education TEXT, f_status TEXT, \
+                                                      f_diseases TEXT, f_bad TEXT, f_violation TEXT, f_medication TEXT, f_number TEXT, f_obesity TEXT, f_overweight TEXT, f_duration TEXT, \
+                                                      f_cause TEXT, f_lifestyle TEXT, f_attempts TEXT, f_effect TEXT, f_maxweight INTEGER, f_minweight INTEGER, f_impact TEXT, f_want TEXT, \
+                                                      f_ready TEXT)")))
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        qDebug() << db.lastError();
+        db.close();
+        return false;
+    }
+    // Test1
+    if (!query.exec(QString("CREATE TABLE tbl_test1 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        qDebug() << db.lastError();
+        db.close();
+        return false;
+    }
+    // Test2
+    if (!query.exec(QString("CREATE TABLE tbl_test2 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        qDebug() << db.lastError();
+        db.close();
+        return false;
+    }
+    // Test3
+    if (!query.exec(QString("CREATE TABLE tbl_test3 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        qDebug() << db.lastError();
+        db.close();
+        return false;
+    }
+    // Test4
+    if (!query.exec(QString("CREATE TABLE tbl_test4 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT, f_res1 TEXT)")))
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        qDebug() << db.lastError();
+        db.close();
+        return false;
+    }
+    // Test5
+    if (!query.exec(QString("CREATE TABLE tbl_test5 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        qDebug() << db.lastError();
+        db.close();
+        return false;
+    }
+    // Results
+    if (!query.exec(QString("CREATE TABLE tbl_results (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_id1 INTEGER, f_res11 INTEGER, f_legend11 TEXT, f_res12 INTEGER, f_legend12 TEXT, f_res13 INTEGER, f_legend13 TEXT, f_id2 INTEGER, f_res2 INTEGER, f_legend2 TEXT, f_id3 INTEGER, f_res3 INTEGER, f_legend3 TEXT, f_id4 INTEGER, f_res4 INTEGER, f_legend4 TEXT, f_id5 INTEGER, f_res5 INTEGER, f_legend5 TEXT)")))
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        qDebug() << db.lastError();
+        db.close();
+        return false;
+    }
+
+    db.close();
+    return true;
 }

@@ -32,8 +32,10 @@
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>&amp;Тести</string>
+     <string>&amp;Анкети</string>
     </property>
+    <addaction name="actionTest0"/>
+    <addaction name="separator"/>
     <addaction name="actionTest1"/>
     <addaction name="actionTest2"/>
     <addaction name="actionTest3"/>
@@ -79,6 +81,8 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionTest0"/>
+   <addaction name="separator"/>
    <addaction name="actionTest1"/>
    <addaction name="actionTest2"/>
    <addaction name="actionTest3"/>
@@ -89,7 +93,7 @@
   <action name="actionTest1">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d1.png</normaloff>:/images/d1.png</iconset>
+     <normaloff>:/images/d2.png</normaloff>:/images/d2.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Айзенка...</string>
@@ -104,7 +108,7 @@
   <action name="actionTest2">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d2.png</normaloff>:/images/d2.png</iconset>
+     <normaloff>:/images/d3.png</normaloff>:/images/d3.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Larocque...</string>
@@ -119,7 +123,7 @@
   <action name="actionTest3">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d3.png</normaloff>:/images/d3.png</iconset>
+     <normaloff>:/images/d4.png</normaloff>:/images/d4.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Бека...</string>
@@ -145,7 +149,7 @@
   <action name="actionTest4">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d4.png</normaloff>:/images/d4.png</iconset>
+     <normaloff>:/images/d5.png</normaloff>:/images/d5.png</iconset>
    </property>
    <property name="text">
     <string>&amp;ВІТЕ...</string>
@@ -160,7 +164,7 @@
   <action name="actionTest5">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d5.png</normaloff>:/images/d5.png</iconset>
+     <normaloff>:/images/d7.png</normaloff>:/images/d7.png</iconset>
    </property>
    <property name="text">
     <string>В&amp;ойтенко...</string>
@@ -230,6 +234,21 @@
    </property>
    <property name="statusTip">
     <string>Експорт результатів в у формат XML</string>
+   </property>
+  </action>
+  <action name="actionTest0">
+   <property name="icon">
+    <iconset resource="DTest.qrc">
+     <normaloff>:/images/d1.png</normaloff>:/images/d1.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Пацієнта...</string>
+   </property>
+   <property name="toolTip">
+    <string>Анкета пацієнта</string>
+   </property>
+   <property name="statusTip">
+    <string>Анкета пацієнта</string>
    </property>
   </action>
  </widget>
@@ -382,6 +401,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>actionTest0</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotTest0()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>slotTest1()</slot>
@@ -393,5 +428,6 @@
   <slot>slotStudent()</slot>
   <slot>slotTable()</slot>
   <slot>slotExport()</slot>
+  <slot>slotTest0()</slot>
  </slots>
 </ui>

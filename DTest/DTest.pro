@@ -17,7 +17,6 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     test1dialog.cpp \
-    getstudentdialog.cpp \
     studentdialog.cpp \
     resultdialog.cpp \
     tabledialog.cpp \
@@ -25,11 +24,12 @@ SOURCES += main.cpp\
     test2dialog.cpp \
     test3dialog.cpp \
     test4dialog.cpp \
-    test5dialog.cpp
+    test5dialog.cpp \
+    test0dialog.cpp \
+    getpatientdialog.cpp
 
 HEADERS  += mainwindow.h \
     test1dialog.h \
-    getstudentdialog.h \
     studentdialog.h \
     resultdialog.h \
     tabledialog.h \
@@ -37,11 +37,12 @@ HEADERS  += mainwindow.h \
     test2dialog.h \
     test3dialog.h \
     test4dialog.h \
-    test5dialog.h
+    test5dialog.h \
+    test0dialog.h \
+    getpatientdialog.h
 
 FORMS    += mainwindow.ui \
     test1dialog.ui \
-    getstudentdialog.ui \
     studentdialog.ui \
     resultdialog.ui \
     tabledialog.ui \
@@ -49,7 +50,9 @@ FORMS    += mainwindow.ui \
     test2dialog.ui \
     test3dialog.ui \
     test4dialog.ui \
-    test5dialog.ui
+    test5dialog.ui \
+    test0dialog.ui \
+    getpatientdialog.ui
 
 RESOURCES += \
     DTest.qrc

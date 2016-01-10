@@ -8,7 +8,7 @@ namespace Ui {
 class MainWindow;
 }
 
-class GetStudentDialog;
+class GetPatientDialog;
 
 class MainWindow : public QMainWindow
 {
@@ -19,6 +19,7 @@ public:
     ~MainWindow();
 
 public slots:
+    void slotTest0(void);
     void slotTest1(void);
     void slotTest2(void);
     void slotTest3(void);
@@ -34,7 +35,7 @@ protected:
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
-    GetStudentDialog* sdlg;
+    GetPatientDialog* sdlg;
     void readSettings(void);
     void writeSettings(void);
     void openDB(void);

@@ -4,12 +4,14 @@
 #include <QMessageBox>
 #include "tabledialog.h"
 #include "ui_tabledialog.h"
+#include "getpatientdialog.h"
+#include "test0dialog.h"
 #include "test1dialog.h"
 #include "test2dialog.h"
 #include "test3dialog.h"
 #include "test4dialog.h"
 #include "test5dialog.h"
-#include "getstudentdialog.h"
+#include "test0dialog.h"
 
 
 TableDialog::TableDialog(QWidget *parent) :
@@ -335,7 +337,7 @@ void TableDialog::slotTest3(void)
 void TableDialog::slotName(void)
 {
     QSqlQuery query;
-    GetStudentDialog* sdlg = new GetStudentDialog();
+    GetPatientDialog* sdlg = new GetPatientDialog();
     QString dt = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 5).data().toString(),
             name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString(),
             sex = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 1).data().toString();
@@ -345,7 +347,7 @@ void TableDialog::slotName(void)
         id_student = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 11).data().toInt(),
         id = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
-    sdlg->initDialog(name,sex,age, height, weight, dt);
+//    sdlg->initDialog(name,sex,age, height, weight, dt);
     if (sdlg->exec() != QDialog::Accepted)
     {
         delete sdlg;
