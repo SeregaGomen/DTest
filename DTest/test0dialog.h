@@ -24,6 +24,7 @@ private slots:
 
 private:
     Ui::Test0Dialog *ui;
+    bool checkData(void);
 };
 
 #endif // TEST0DIALOG_H

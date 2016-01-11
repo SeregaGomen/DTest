@@ -51,6 +51,21 @@ void Test0Dialog::initDialog(void)
 }
 
 //!!!! Проверить корректность ввода данных (тип и обязательные поля)
+bool Test0Dialog::checkData(void)
+{
+    if (ui->leName->text().simplified().isEmpty())
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Не задано прізвище пацієнта!"), QMessageBox::Ok);
+        return false;
+    }
+    if (ui->leName->text().simplified().isEmpty())
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Не задано прізвище пацієнта!"), QMessageBox::Ok);
+        return false;
+    }
+    return true;
+}
+
 
 void Test0Dialog::accept(void)
 {
@@ -85,6 +100,10 @@ void Test0Dialog::accept(void)
         holding = ui->leHolding->text().toInt(),
         maxweight = ui->leMaxWeight->text().toInt(),
         minweight = ui->leMinWeight->text().toInt();
+
+    // Проверка введенных данных
+    if (!checkData())
+        return;
 
     // Сохраняем информацию о тестируемом
     if (!query.exec(QString("INSERT INTO tbl_people (f_name,f_sex,f_age,f_height,f_weight,f_ads,f_add,f_balancing,f_holding,f_merried,f_profit,f_education,f_status, \
