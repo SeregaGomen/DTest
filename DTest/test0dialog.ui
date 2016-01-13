@@ -1547,6 +1547,38 @@
    </widget>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>leName</tabstop>
+  <tabstop>cbSex</tabstop>
+  <tabstop>sbAge</tabstop>
+  <tabstop>leHeight</tabstop>
+  <tabstop>leWeight</tabstop>
+  <tabstop>sbADs</tabstop>
+  <tabstop>sbADd</tabstop>
+  <tabstop>leBalancing</tabstop>
+  <tabstop>leHolding</tabstop>
+  <tabstop>cbMerried</tabstop>
+  <tabstop>cbProfit</tabstop>
+  <tabstop>cbEducation</tabstop>
+  <tabstop>cbStatus</tabstop>
+  <tabstop>cbDiseases</tabstop>
+  <tabstop>cbBad</tabstop>
+  <tabstop>cbViolation</tabstop>
+  <tabstop>cbMedication</tabstop>
+  <tabstop>cbNumber</tabstop>
+  <tabstop>cbObesity</tabstop>
+  <tabstop>cbOverweight</tabstop>
+  <tabstop>cbDuration</tabstop>
+  <tabstop>cbCause</tabstop>
+  <tabstop>cbLifestyle</tabstop>
+  <tabstop>cbAttempts</tabstop>
+  <tabstop>cbEffect</tabstop>
+  <tabstop>leMaxWeight</tabstop>
+  <tabstop>leMinWeight</tabstop>
+  <tabstop>cbImpact</tabstop>
+  <tabstop>cbWant</tabstop>
+  <tabstop>cbReady</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>

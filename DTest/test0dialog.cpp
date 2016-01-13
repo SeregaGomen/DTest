@@ -53,14 +53,47 @@ void Test0Dialog::initDialog(void)
 //!!!! Проверить корректность ввода данных (тип и обязательные поля)
 bool Test0Dialog::checkData(void)
 {
+    bool isOk;
+
     if (ui->leName->text().simplified().isEmpty())
     {
         QMessageBox::critical(this, tr("Помилка"),tr("Не задано прізвище пацієнта!"), QMessageBox::Ok);
         return false;
     }
-    if (ui->leName->text().simplified().isEmpty())
+    ui->leHeight->text().toInt(&isOk);
+    if (!isOk)
     {
-        QMessageBox::critical(this, tr("Помилка"),tr("Не задано прізвище пацієнта!"), QMessageBox::Ok);
+        QMessageBox::critical(this, tr("Помилка"),tr("Не корректно задан зріст пацієнта!"), QMessageBox::Ok);
+        return false;
+    }
+    ui->leWeight->text().toInt(&isOk);
+    if (!isOk)
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Не корректно задана вага пацієнта!"), QMessageBox::Ok);
+        return false;
+    }
+    ui->leBalancing->text().toInt(&isOk);
+    if (!isOk)
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Не корректно задана статична балансировка!"), QMessageBox::Ok);
+        return false;
+    }
+    ui->leHolding->text().toInt(&isOk);
+    if (!isOk)
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Не корректно задана затримка дихання!"), QMessageBox::Ok);
+        return false;
+    }
+    ui->leMaxWeight->text().toInt(&isOk);
+    if (!isOk)
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Не корректно задана максимальна вага пацієнта!"), QMessageBox::Ok);
+        return false;
+    }
+    ui->leMinWeight->text().toInt(&isOk);
+    if (!isOk)
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Не корректно задана мінімальна вага пацієнта!"), QMessageBox::Ok);
         return false;
     }
     return true;
