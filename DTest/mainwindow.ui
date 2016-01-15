@@ -93,7 +93,7 @@
   <action name="actionTest1">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d2.png</normaloff>:/images/d2.png</iconset>
+     <normaloff>:/images/d1.png</normaloff>:/images/d1.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Айзенка...</string>
@@ -108,7 +108,7 @@
   <action name="actionTest2">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d3.png</normaloff>:/images/d3.png</iconset>
+     <normaloff>:/images/d2.png</normaloff>:/images/d2.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Larocque...</string>
@@ -123,7 +123,7 @@
   <action name="actionTest3">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d4.png</normaloff>:/images/d4.png</iconset>
+     <normaloff>:/images/d3.png</normaloff>:/images/d3.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Бека...</string>
@@ -149,7 +149,7 @@
   <action name="actionTest4">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d5.png</normaloff>:/images/d5.png</iconset>
+     <normaloff>:/images/d4.png</normaloff>:/images/d4.png</iconset>
    </property>
    <property name="text">
     <string>&amp;ВІТЕ...</string>
@@ -164,7 +164,7 @@
   <action name="actionTest5">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d7.png</normaloff>:/images/d7.png</iconset>
+     <normaloff>:/images/d6.png</normaloff>:/images/d6.png</iconset>
    </property>
    <property name="text">
     <string>В&amp;ойтенко...</string>
@@ -239,7 +239,7 @@
   <action name="actionTest0">
    <property name="icon">
     <iconset resource="DTest.qrc">
-     <normaloff>:/images/d1.png</normaloff>:/images/d1.png</iconset>
+     <normaloff>:/images/people.png</normaloff>:/images/people.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Пацієнта...</string>

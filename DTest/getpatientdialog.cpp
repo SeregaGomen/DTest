@@ -44,6 +44,11 @@ QString GetPatientDialog::getDate(void)
     return ui->deDate->text();
 }
 
+int GetPatientDialog::getID(void)
+{
+    return ui->tableWidget->item(ui->tableWidget->currentRow(),5)->text().toInt();
+}
+
 int GetPatientDialog::getHeight(void)
 {
     return ui->tableWidget->item(ui->tableWidget->currentRow(),3)->text().toInt();
@@ -67,11 +72,11 @@ void GetPatientDialog::initDialog(void)
     ui->tableWidget->setFocus();
     while (ui->tableWidget->rowCount())
         ui->tableWidget->removeRow(0);
-    if (query.exec(QString("SELECT DISTINCT f_name, f_sex, f_age, f_height, f_weight FROM tbl_people ORDER BY f_name")))
+    if (query.exec(QString("SELECT DISTINCT f_name, f_sex, f_age, f_height, f_weight, id FROM tbl_people ORDER BY f_name")))
         while (query.next())
         {
             ui->tableWidget->insertRow(current);
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 6; i++)
             {
                 ui->tableWidget->setItem(current, i, new QTableWidgetItem(query.value(i).toString()));
                 ui->tableWidget->item(current,i)->setFlags((Qt::ItemFlags)~Qt::ItemIsEditable);
@@ -82,5 +87,7 @@ void GetPatientDialog::initDialog(void)
     ui->tableWidget->setColumnWidth(2,50);
     ui->tableWidget->setColumnWidth(3,50);
     ui->tableWidget->setColumnWidth(4,50);
+    ui->tableWidget->setColumnHidden(5,true);
+
 }
 

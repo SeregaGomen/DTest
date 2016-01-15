@@ -22,6 +22,7 @@ public:
     int getAge(void);
     int getHeight(void);
     int getWeight(void);
+    int getID(void);
     void initDialog(void);
 
 private slots:

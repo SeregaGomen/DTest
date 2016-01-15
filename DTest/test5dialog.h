@@ -12,7 +12,7 @@ class Test5Dialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit Test5Dialog(QString,QString,QString,int,int,int,QWidget *parent = 0);
+    explicit Test5Dialog(QString,QString,QString,int,int,int,int,QWidget *parent = 0);
     ~Test5Dialog();
     QString getLegend(void);
     int getResults(void);

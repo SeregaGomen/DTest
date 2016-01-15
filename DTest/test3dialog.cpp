@@ -5,7 +5,7 @@
 #include "test3dialog.h"
 #include "ui_test3dialog.h"
 
-Test3Dialog::Test3Dialog(QString d,QString n,QString s,int a,int h, int w,QWidget *parent) :
+Test3Dialog::Test3Dialog(QString d,QString n,QString s,int a,int h, int w,int id,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Test3Dialog)
 {
@@ -16,7 +16,7 @@ Test3Dialog::Test3Dialog(QString d,QString n,QString s,int a,int h, int w,QWidge
     height = h;
     weight = w;
     dt = d;
-    id_people = 0;
+    id_people = id;
     res = 0;
 
     setWindowTitle("Шкала депрессии Бека - " + name);
@@ -104,12 +104,12 @@ void Test3Dialog::accept(void)
     if (!id_people)
     {
         // Сохраняем информацию о тестируемом
-        if (!query.exec(QString("INSERT INTO tbl_people (f_name,f_sex,f_age,f_height,f_weight) VALUES ('%1','%2',%3,%4,%5)").arg(name.toUpper()).arg(sex.toUpper()).arg(age).arg(height).arg(weight)))
-        {
-            qDebug() << query.lastError();
-            QMessageBox::critical(this, tr("Помилка"),tr("Помилка запису бази даних!"), QMessageBox::Ok);
-            return;
-        }
+//        if (!query.exec(QString("INSERT INTO tbl_people (f_name,f_sex,f_age,f_height,f_weight) VALUES ('%1','%2',%3,%4,%5)").arg(name.toUpper()).arg(sex.toUpper()).arg(age).arg(height).arg(weight)))
+//        {
+//            qDebug() << query.lastError();
+//            QMessageBox::critical(this, tr("Помилка"),tr("Помилка запису бази даних!"), QMessageBox::Ok);
+//            return;
+//        }
 
         query.exec(QString("SELECT id FROM tbl_people WHERE f_name = '%1' AND f_sex = '%2' AND f_age = %3").arg(name.toUpper()).arg(sex.toUpper()).arg(age));
         while (query.next())

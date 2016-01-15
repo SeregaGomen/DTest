@@ -12,7 +12,7 @@ class Test2Dialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit Test2Dialog(QString,QString,QString,int,int,int,QWidget *parent = 0);
+    explicit Test2Dialog(QString,QString,QString,int,int,int,int,QWidget *parent = 0);
     ~Test2Dialog();
     QString getLegend(void);
     int getResults(void);

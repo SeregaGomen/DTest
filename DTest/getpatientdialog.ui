@@ -75,6 +75,11 @@
       <string>Вага</string>
      </property>
     </column>
+    <column>
+     <property name="text">
+      <string>id</string>
+     </property>
+    </column>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_4">

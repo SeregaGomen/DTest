@@ -18,12 +18,19 @@ public:
     explicit Test0Dialog(QWidget *parent = 0);
     ~Test0Dialog();
     void initDialog(void);
+    void initDialog(int);
+    QString getName(void);
+    QString getSex(void);
+    int getAge(void);
+    int getHeight(void);
+    int getWeight(void);
 
 private slots:
     void slotChangeText(const QString&);
 
 private:
     Ui::Test0Dialog *ui;
+    int id_people;
     bool checkData(void);
 };
 

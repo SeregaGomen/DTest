@@ -42,13 +42,10 @@ MainWindow::MainWindow(QWidget *parent) :
 //    #else
 //        setWindowIcon(QIcon(":/images/main.png"));
 #endif
-
-    sdlg = new GetPatientDialog(this);
 }
 
 MainWindow::~MainWindow()
 {
-    delete sdlg;
     delete ui;
 }
 
@@ -137,7 +134,7 @@ void MainWindow::setupLanguage(void)
 
 void MainWindow::slotTest0(void)
 {
-    Test0Dialog *dlg = new Test0Dialog(this);;
+    Test0Dialog *dlg = new Test0Dialog(this);
 
     dlg->exec();
     delete dlg;
@@ -146,66 +143,76 @@ void MainWindow::slotTest0(void)
 void MainWindow::slotTest1(void)
 {
    Test1Dialog *dlg;
+   GetPatientDialog* sdlg = new GetPatientDialog(this);
 
    sdlg->initDialog();
-   if (sdlg->exec() != QDialog::Accepted)
-       return;
-
-   dlg = new Test1Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
-   dlg->exec();
-   delete dlg;
+   if (sdlg->exec() == QDialog::Accepted)
+   {
+        dlg = new Test1Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+        dlg->exec();
+        delete dlg;
+   }
+   delete sdlg;
 }
 
 void MainWindow::slotTest2(void)
 {
     Test2Dialog *dlg;
+    GetPatientDialog* sdlg = new GetPatientDialog(this);
 
     sdlg->initDialog();
-    if (sdlg->exec() != QDialog::Accepted)
-        return;
-
-    dlg = new Test2Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
-    dlg->exec();
-    delete dlg;
+    if (sdlg->exec() == QDialog::Accepted)
+    {
+         dlg = new Test2Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg->exec();
+         delete dlg;
+    }
+    delete sdlg;
 }
 
 void MainWindow::slotTest3(void)
 {
     Test3Dialog *dlg;
+    GetPatientDialog* sdlg = new GetPatientDialog(this);
 
     sdlg->initDialog();
-    if (sdlg->exec() != QDialog::Accepted)
-        return;
-
-    dlg = new Test3Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
-    dlg->exec();
-    delete dlg;
+    if (sdlg->exec() == QDialog::Accepted)
+    {
+         dlg = new Test3Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg->exec();
+         delete dlg;
+    }
+    delete sdlg;
 }
 
 void MainWindow::slotTest4(void)
 {
     Test4Dialog *dlg;
+    GetPatientDialog* sdlg = new GetPatientDialog(this);
 
     sdlg->initDialog();
-    if (sdlg->exec() != QDialog::Accepted)
-        return;
-
-    dlg = new Test4Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
-    dlg->exec();
-    delete dlg;
+    if (sdlg->exec() == QDialog::Accepted)
+    {
+         dlg = new Test4Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg->exec();
+         delete dlg;
+    }
+    delete sdlg;
 }
 
 void MainWindow::slotTest5(void)
 {
     Test5Dialog *dlg;
+    GetPatientDialog* sdlg = new GetPatientDialog(this);
 
     sdlg->initDialog();
-    if (sdlg->exec() != QDialog::Accepted)
-        return;
-
-    dlg = new Test5Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),this);
-    dlg->exec();
-    delete dlg;
+    if (sdlg->exec() == QDialog::Accepted)
+    {
+         dlg = new Test5Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg->exec();
+         delete dlg;
+    }
+    delete sdlg;
 }
 
 void MainWindow::slotStudent(void)
