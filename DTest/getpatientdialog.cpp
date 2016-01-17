@@ -15,6 +15,7 @@ GetPatientDialog::GetPatientDialog(QWidget *parent) :
     ui->buttonBox->button(QDialogButtonBox::Ok)->setEnabled(false);
     ui->deDate->setDateTime(QDateTime::currentDateTime());
     connect(ui->tableWidget->selectionModel(), SIGNAL(selectionChanged(QItemSelection, QItemSelection)), this, SLOT(slotEnabledBtn(QItemSelection, QItemSelection)));
+    connect(ui->tableWidget, SIGNAL(cellDoubleClicked(int, int)), this, SLOT(accept()));
 
     initDialog();
 }
