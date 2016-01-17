@@ -149,7 +149,7 @@ void MainWindow::slotTest1(void)
    sdlg->initDialog();
    if (sdlg->exec() == QDialog::Accepted)
    {
-        dlg = new Test1Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+        dlg = new Test1Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getID(),this);
         dlg->exec();
         delete dlg;
    }
@@ -164,7 +164,7 @@ void MainWindow::slotTest2(void)
     sdlg->initDialog();
     if (sdlg->exec() == QDialog::Accepted)
     {
-         dlg = new Test2Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg = new Test2Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getID(),this);
          dlg->exec();
          delete dlg;
     }
@@ -179,7 +179,7 @@ void MainWindow::slotTest3(void)
     sdlg->initDialog();
     if (sdlg->exec() == QDialog::Accepted)
     {
-         dlg = new Test3Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg = new Test3Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getID(),this);
          dlg->exec();
          delete dlg;
     }
@@ -194,7 +194,7 @@ void MainWindow::slotTest4(void)
     sdlg->initDialog();
     if (sdlg->exec() == QDialog::Accepted)
     {
-         dlg = new Test4Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg = new Test4Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getID(),this);
          dlg->exec();
          delete dlg;
     }
@@ -209,7 +209,7 @@ void MainWindow::slotTest5(void)
     sdlg->initDialog();
     if (sdlg->exec() == QDialog::Accepted)
     {
-         dlg = new Test5Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg = new Test5Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getID(),this);
          dlg->exec();
          delete dlg;
     }

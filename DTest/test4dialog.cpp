@@ -5,21 +5,16 @@
 #include "test4dialog.h"
 #include "ui_test4dialog.h"
 
-Test4Dialog::Test4Dialog(QString d,QString n,QString s,int a,int h, int w,int id,QWidget *parent) :
+Test4Dialog::Test4Dialog(QString d,QString n,int id,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Test4Dialog)
 {
     ui->setupUi(this);
-    name = n;
-    sex = s;
-    age = a;
-    height = h;
-    weight = w;
     dt = d;
     id_people = id;
     res = 0;
 
-    setWindowTitle("Тест для выявления булимии - " + name);
+    setWindowTitle("Тест для выявления булимии - " + n);
     loadData();
 }
 
@@ -30,7 +25,7 @@ Test4Dialog::~Test4Dialog()
 
 void Test4Dialog::loadData(void)
 {
-    QSqlQuery query(QString("SELECT id FROM tbl_people WHERE f_name = '%1' AND f_sex = '%2' AND f_age = %3").arg(name.toUpper()).arg(sex.toUpper()).arg(age));
+    QSqlQuery query;
     QRadioButton *rb[][6] = {
                               {ui->rb1_1,ui->rb1_2,NULL,NULL,NULL,NULL},
                               {ui->rb2_1,ui->rb2_2,NULL,NULL,NULL,NULL},
@@ -75,49 +70,43 @@ void Test4Dialog::loadData(void)
     int q;
     QString res;
 
+    query.exec(QString("SELECT * FROM tbl_test4 WHERE f_people = %1 AND f_dt = '%2'").arg(id_people).arg(dt));
     while (query.next())
-        id_people = query.value(0).toInt();
-    if (id_people)
     {
-        // Такая анкета уже есть, загружаем ее
-        query.exec(QString("SELECT * FROM tbl_test4 WHERE f_people = %1 AND f_dt = '%2'").arg(id_people).arg(dt));
-        while (query.next())
+        for (int i = 0; i < 33; i++)
         {
-            for (int i = 0; i < 33; i++)
+            if (i == 6)
             {
-                if (i == 6)
+                res = query.value(4).toString();
+                for (int j = 0; j < 4; j++)
                 {
-                    res = query.value(4).toString();
-                    for (int j = 0; j < 4; j++)
-                    {
-                        q = res.mid(j,1).toInt();
-                        rb1[j][q - 1]->setChecked(true);
-                    }
-                    continue;
+                    q = res.mid(j,1).toInt();
+                    rb1[j][q - 1]->setChecked(true);
                 }
-                res = query.value(3).toString();
-                q = res.mid(i,1).toInt();
-                switch (q)
-                {
-                    case 1:
-                        rb[i][0]->setChecked(true);
-                        break;
-                    case 2:
-                        rb[i][1]->setChecked(true);
-                        break;
-                    case 3:
-                        rb[i][2]->setChecked(true);
-                        break;
-                    case 4:
-                        rb[i][3]->setChecked(true);
-                        break;
-                    case 5:
-                        rb[i][4]->setChecked(true);
-                        break;
-                    case 6:
-                        rb[i][5]->setChecked(true);
-                        break;
-                }
+                continue;
+            }
+            res = query.value(3).toString();
+            q = res.mid(i,1).toInt();
+            switch (q)
+            {
+            case 1:
+                rb[i][0]->setChecked(true);
+                break;
+            case 2:
+                rb[i][1]->setChecked(true);
+                break;
+            case 3:
+                rb[i][2]->setChecked(true);
+                break;
+            case 4:
+                rb[i][3]->setChecked(true);
+                break;
+            case 5:
+                rb[i][4]->setChecked(true);
+                break;
+            case 6:
+                rb[i][5]->setChecked(true);
+                break;
             }
         }
     }
@@ -126,8 +115,7 @@ void Test4Dialog::loadData(void)
 void Test4Dialog::accept(void)
 {
     QSqlQuery query;
-    QString legend,
-            sql,
+    QString sql,
             s_res,
             s_res1;
     int id = 0;
@@ -135,21 +123,6 @@ void Test4Dialog::accept(void)
 
     if (!calcRes(s_res,s_res1))
         return;
-
-    if (!id_people)
-    {
-        // Сохраняем информацию о тестируемом
-//        if (!query.exec(QString("INSERT INTO tbl_people (f_name,f_sex,f_age,f_height,f_weight) VALUES ('%1','%2',%3,%4,%5)").arg(name.toUpper()).arg(sex.toUpper()).arg(age).arg(height).arg(weight)))
-//        {
-//            qDebug() << query.lastError();
-//            QMessageBox::critical(this, tr("Помилка"),tr("Помилка запису бази даних!"), QMessageBox::Ok);
-//            return;
-//        }
-
-        query.exec(QString("SELECT id FROM tbl_people WHERE f_name = '%1' AND f_sex = '%2' AND f_age = %3").arg(name.toUpper()).arg(sex.toUpper()).arg(age));
-        while (query.next())
-            id_people = query.value(0).toInt();
-    }
 
     // Сохраняем анекту
     query.exec(QString("SELECT id FROM tbl_test4 WHERE f_people = '%1' AND f_dt = '%2'").arg(id_people).arg(dt));

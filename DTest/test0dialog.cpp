@@ -110,7 +110,7 @@ void Test0Dialog::initDialog(int id)
     while (query.next())
     {
         ui->leName->setText(query.value(1).toString());
-        ui->cbSex->setCurrentIndex((query.value(2).toString().toUpper() == "ЧОЛ.") ? 0 : 1);
+        ui->cbSex->setCurrentIndex((query.value(2).toString().toUpper() == "МУЖ.") ? 0 : 1);
         ui->sbAge->setValue(query.value(3).toInt());
         ui->leHeight->setText(query.value(4).toString());
         ui->leWeight->setText(query.value(5).toString());

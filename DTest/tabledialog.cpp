@@ -130,14 +130,10 @@ void TableDialog::slotTest4(void)
 {
     Test4Dialog *dlg;
     QString dt = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 5).data().toString(),
-            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString(),
-            sex = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 1).data().toString();
-    int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
-        height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
-        weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
+            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString();
+    int id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
-    dlg = new Test4Dialog(dt,name,sex,age,height,weight,id_people,this);
+    dlg = new Test4Dialog(dt,name,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
         ui->tableWidget->setItem(ui->tableWidget->currentRow(), 9, new QTableWidgetItem(QString("%1 (%2)").arg(dlg->getLegend()).arg(dlg->getResults())));
 
@@ -162,14 +158,10 @@ void TableDialog::slotTest5(void)
 {
     Test5Dialog *dlg;
     QString dt = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 5).data().toString(),
-            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString(),
-            sex = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 1).data().toString();
-    int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
-        height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
-        weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
+            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString();
+    int id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
-    dlg = new Test5Dialog(dt,name,sex,age,height,weight,id_people,this);
+    dlg = new Test5Dialog(dt,name,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
         ui->tableWidget->setItem(ui->tableWidget->currentRow(), 10, new QTableWidgetItem(QString("%1 (%2)").arg(dlg->getLegend()).arg(dlg->getResults())));
 
@@ -217,20 +209,16 @@ void TableDialog::slotTest1(void)
     Test1Dialog *dlg;
     QString dt = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 5).data().toString(),
             name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString(),
-            sex = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 1).data().toString(),
             legend,
             legend1,
             legend2,
             legend3;
-    int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
-        height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
-        weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt(),
+    int id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt(),
         res1,
         res2,
         res3;
 
-    dlg = new Test1Dialog(dt,name,sex,age,height,weight,id_people,this);
+    dlg = new Test1Dialog(dt,name,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
     {
         dlg->getLegend(legend1,legend2,legend3);
@@ -246,14 +234,10 @@ void TableDialog::slotTest2(void)
 {
     Test2Dialog *dlg;
     QString dt = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 5).data().toString(),
-            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString(),
-            sex = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 1).data().toString();
-    int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
-        height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
-        weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
+            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString();
+    int id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
-    dlg = new Test2Dialog(dt,name,sex,age,height,weight,id_people,this);
+    dlg = new Test2Dialog(dt,name,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
         ui->tableWidget->setItem(ui->tableWidget->currentRow(), 7, new QTableWidgetItem(QString("%1 (%2)").arg(dlg->getLegend()).arg(dlg->getResults())));
 
@@ -263,14 +247,10 @@ void TableDialog::slotTest3(void)
 {
     Test3Dialog *dlg;
     QString dt = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 5).data().toString(),
-            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString(),
-            sex = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 1).data().toString();
-    int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
-        height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
-        weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
+            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString();
+    int id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
-    dlg = new Test3Dialog(dt,name,sex,age,height,weight,id_people,this);
+    dlg = new Test3Dialog(dt,name,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
         ui->tableWidget->setItem(ui->tableWidget->currentRow(), 8, new QTableWidgetItem(QString("%1 (%2)").arg(dlg->getLegend()).arg(dlg->getResults())));
 
@@ -296,7 +276,7 @@ void TableDialog::slotName(void)
         height = dlg->getHeight();
         weight = dlg->getWeight();
         ui->tableWidget->setItem(ui->tableWidget->currentRow(), 0, new QTableWidgetItem(name));  // ФИО
-        ui->tableWidget->setItem(ui->tableWidget->currentRow(), 1, new QTableWidgetItem(sex.toUpper()));  // Пол
+        ui->tableWidget->setItem(ui->tableWidget->currentRow(), 1, new QTableWidgetItem(sex));  // Пол
         ui->tableWidget->setItem(ui->tableWidget->currentRow(), 2, new QTableWidgetItem(QString("%1").arg(age)));  // Возраст
         ui->tableWidget->setItem(ui->tableWidget->currentRow(), 3, new QTableWidgetItem(QString("%1").arg(height)));  // Рост
         ui->tableWidget->setItem(ui->tableWidget->currentRow(), 4, new QTableWidgetItem(QString("%1").arg(weight)));  // Вес

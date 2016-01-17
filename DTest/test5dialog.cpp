@@ -5,24 +5,18 @@
 #include "test5dialog.h"
 #include "ui_test5dialog.h"
 
-Test5Dialog::Test5Dialog(QString d,QString n,QString s,int a,int h, int w,int id,QWidget *parent) :
+Test5Dialog::Test5Dialog(QString d,QString n,int id,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Test5Dialog)
 {
     ui->setupUi(this);
     ui->groupBox_41->hide();
 
-
-    name = n;
-    sex = s;
-    age = a;
-    height = h;
-    weight = w;
     dt = d;
     id_people = id;
     res = 0;
 
-    setWindowTitle("Методика оценки биологического возраста В.П. Войтенко - " + name);
+    setWindowTitle("Методика оценки биологического возраста В.П. Войтенко - " + n);
     loadData();
 }
 
@@ -33,7 +27,7 @@ Test5Dialog::~Test5Dialog()
 
 void Test5Dialog::loadData(void)
 {
-    QSqlQuery query(QString("SELECT id FROM tbl_people WHERE f_name = '%1' AND f_sex = '%2' AND f_age = %3").arg(name.toUpper()).arg(sex.toUpper()).arg(age));
+    QSqlQuery query;
     QRadioButton *rb[][4] = {
                               {ui->rb1_1,ui->rb1_2,NULL,NULL},
                               {ui->rb2_1,ui->rb2_2,NULL,NULL},
@@ -68,33 +62,27 @@ void Test5Dialog::loadData(void)
     int q;
     QString res;
 
+    query.exec(QString("SELECT * FROM tbl_test5 WHERE f_people = %1 AND f_dt = '%2'").arg(id_people).arg(dt));
     while (query.next())
-        id_people = query.value(0).toInt();
-    if (id_people)
     {
-        // Такая анкета уже есть, загружаем ее
-        query.exec(QString("SELECT * FROM tbl_test5 WHERE f_people = %1 AND f_dt = '%2'").arg(id_people).arg(dt));
-        while (query.next())
+        res = query.value(3).toString();
+        for (int i = 0; i < 29; i++)
         {
-            res = query.value(3).toString();
-            for (int i = 0; i < 29; i++)
+            q = res.mid(i,1).toInt();
+            switch (q)
             {
-                q = res.mid(i,1).toInt();
-                switch (q)
-                {
-                    case 1:
-                        rb[i][0]->setChecked(true);
-                        break;
-                    case 2:
-                        rb[i][1]->setChecked(true);
-                        break;
-                    case 3:
-                        rb[i][2]->setChecked(true);
-                        break;
-                    case 4:
-                        rb[i][3]->setChecked(true);
-                        break;
-                }
+            case 1:
+                rb[i][0]->setChecked(true);
+                break;
+            case 2:
+                rb[i][1]->setChecked(true);
+                break;
+            case 3:
+                rb[i][2]->setChecked(true);
+                break;
+            case 4:
+                rb[i][3]->setChecked(true);
+                break;
             }
         }
     }
@@ -110,21 +98,6 @@ void Test5Dialog::accept(void)
 
     if (!calcRes(s_res))
         return;
-
-    if (!id_people)
-    {
-        // Сохраняем информацию о тестируемом
-//        if (!query.exec(QString("INSERT INTO tbl_people (f_name,f_sex,f_age,f_height,f_weight) VALUES ('%1','%2',%3,%4,%5)").arg(name.toUpper()).arg(sex.toUpper()).arg(age).arg(height).arg(weight)))
-//        {
-//            qDebug() << query.lastError();
-//            QMessageBox::critical(this, tr("Помилка"),tr("Помилка запису бази даних!"), QMessageBox::Ok);
-//            return;
-//        }
-
-        query.exec(QString("SELECT id FROM tbl_people WHERE f_name = '%1' AND f_sex = '%2' AND f_age = %3").arg(name.toUpper()).arg(sex.toUpper()).arg(age));
-        while (query.next())
-            id_people = query.value(0).toInt();
-    }
 
     // Сохраняем анекту
     query.exec(QString("SELECT id FROM tbl_test5 WHERE f_people = '%1' AND f_dt = '%2'").arg(id_people).arg(dt));
@@ -172,7 +145,9 @@ void Test5Dialog::accept(void)
 
 bool Test5Dialog::calcRes(QString& s_res)
 {
+    QString sex;
     bool isChoised;
+    QSqlQuery query;
     QRadioButton *rb[][4] = {
                               {ui->rb1_1,ui->rb1_2,NULL,NULL},
                               {ui->rb2_1,ui->rb2_2,NULL,NULL},
@@ -204,6 +179,11 @@ bool Test5Dialog::calcRes(QString& s_res)
                               {ui->rb28_1,ui->rb28_2,NULL,NULL},
                               {ui->rb29_1,ui->rb29_2,ui->rb29_3,ui->rb29_4}
     };
+
+    query.exec(QString("SELECT * FROM tbl_people WHERE id = '%1'").arg(id_people));
+    while (query.next())
+        sex = query.value(2).toString().toUpper();
+
 
     s_res = "";
     // Проверка на наличие ответов на все вопросы анкеты
@@ -247,7 +227,7 @@ bool Test5Dialog::calcRes(QString& s_res)
                 res++;
         }
     }
-    if (sex == "ЧОЛ.")
+    if (sex == "МУЖ.")
         res = 0.629*float(res) + 18.56;
     else
         res = 0.581*float(res) + 17.24;
