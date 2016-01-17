@@ -100,6 +100,21 @@ bool Test0Dialog::checkData(void)
     return true;
 }
 
+void Test0Dialog::setCBValue(QComboBox* cb,QString text)
+{
+    int i = 0;
+
+    for (; i < cb->count(); i++)
+        if (cb->itemText(i) == text)
+        {
+            cb->setCurrentIndex(i);
+            return;
+        }
+    cb->addItem(text);
+    cb->setCurrentIndex(cb->count() - 1);
+}
+
+
 void Test0Dialog::initDialog(int id)
 {
     QSqlQuery query;
@@ -118,27 +133,48 @@ void Test0Dialog::initDialog(int id)
         ui->sbADd->setValue(query.value(7).toInt());
         ui->leBalancing->setText(query.value(8).toString());
         ui->leHolding->setText(query.value(9).toString());
-        ui->cbMerried->setCurrentText(query.value(10).toString());
-        ui->cbProfit->setCurrentText(query.value(11).toString());
-        ui->cbEducation->setCurrentText(query.value(12).toString());
-        ui->cbStatus->setCurrentText(query.value(13).toString());
-        ui->cbDiseases->setCurrentText(query.value(14).toString());
-        ui->cbBad->setCurrentText(query.value(15).toString());
-        ui->cbViolation->setCurrentText(query.value(16).toString());
-        ui->cbMedication->setCurrentText(query.value(17).toString());
-        ui->cbNumber->setCurrentText(query.value(18).toString());
-        ui->cbObesity->setCurrentText(query.value(19).toString());
-        ui->cbOverweight->setCurrentText(query.value(20).toString());
-        ui->cbDuration->setCurrentText(query.value(21).toString());
-        ui->cbCause->setCurrentText(query.value(22).toString());
-        ui->cbLifestyle->setCurrentText(query.value(23).toString());
-        ui->cbAttempts->setCurrentText(query.value(24).toString());
-        ui->cbEffect->setCurrentText(query.value(25).toString());
+        setCBValue(ui->cbMerried,query.value(10).toString());
+        setCBValue(ui->cbProfit,query.value(11).toString());
+        setCBValue(ui->cbEducation,query.value(12).toString());
+        setCBValue(ui->cbStatus,query.value(13).toString());
+        setCBValue(ui->cbDiseases,query.value(14).toString());
+        setCBValue(ui->cbBad,query.value(15).toString());
+        setCBValue(ui->cbViolation,query.value(16).toString());
+        setCBValue(ui->cbMedication,query.value(17).toString());
+        setCBValue(ui->cbNumber,query.value(18).toString());
+        setCBValue(ui->cbObesity,query.value(19).toString());
+        setCBValue(ui->cbOverweight,query.value(20).toString());
+        setCBValue(ui->cbDuration,query.value(21).toString());
+        setCBValue(ui->cbCause,query.value(22).toString());
+        setCBValue(ui->cbLifestyle,query.value(23).toString());
+        setCBValue(ui->cbAttempts,query.value(24).toString());
+        setCBValue(ui->cbEffect,query.value(25).toString());
         ui->leMaxWeight->setText(query.value(26).toString());
         ui->leMinWeight->setText(query.value(27).toString());
-        ui->cbImpact->setCurrentText(query.value(28).toString());
-        ui->cbWant->setCurrentText(query.value(29).toString());
-        ui->cbReady->setCurrentText(query.value(30).toString());
+        setCBValue(ui->cbImpact,query.value(28).toString());
+        setCBValue(ui->cbWant,query.value(29).toString());
+        setCBValue(ui->cbReady,query.value(30).toString());
+//        ui->cbMerried->setCurrentText(query.value(10).toString());
+//        ui->cbProfit->setCurrentText(query.value(11).toString());
+//        ui->cbEducation->setCurrentText(query.value(12).toString());
+//        ui->cbStatus->setCurrentText(query.value(13).toString());
+//        ui->cbDiseases->setCurrentText(query.value(14).toString());
+//        ui->cbBad->setCurrentText(query.value(15).toString());
+//        ui->cbViolation->setCurrentText(query.value(16).toString());
+//        ui->cbMedication->setCurrentText(query.value(17).toString());
+//        ui->cbNumber->setCurrentText(query.value(18).toString());
+//        ui->cbObesity->setCurrentText(query.value(19).toString());
+//        ui->cbOverweight->setCurrentText(query.value(20).toString());
+//        ui->cbDuration->setCurrentText(query.value(21).toString());
+//        ui->cbCause->setCurrentText(query.value(22).toString());
+//        ui->cbLifestyle->setCurrentText(query.value(23).toString());
+//        ui->cbAttempts->setCurrentText(query.value(24).toString());
+//        ui->cbEffect->setCurrentText(query.value(25).toString());
+//        ui->leMaxWeight->setText(query.value(26).toString());
+//        ui->leMinWeight->setText(query.value(27).toString());
+//        ui->cbImpact->setCurrentText(query.value(28).toString());
+//        ui->cbWant->setCurrentText(query.value(29).toString());
+//        ui->cbReady->setCurrentText(query.value(30).toString());
     }
 }
 

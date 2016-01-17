@@ -7,6 +7,8 @@ namespace Ui {
 class Test0Dialog;
 }
 
+class QComboBox;
+
 class Test0Dialog : public QDialog
 {
     Q_OBJECT
@@ -32,6 +34,7 @@ private:
     Ui::Test0Dialog *ui;
     int id_people;
     bool checkData(void);
+    void setCBValue(QComboBox*,QString);
 };
 
 #endif // TEST0DIALOG_H
