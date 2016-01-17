@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     test4dialog.cpp \
     test5dialog.cpp \
     test0dialog.cpp \
-    getpatientdialog.cpp
+    getpatientdialog.cpp \
+    test6dialog.cpp
 
 HEADERS  += mainwindow.h \
     test1dialog.h \
@@ -39,7 +40,8 @@ HEADERS  += mainwindow.h \
     test4dialog.h \
     test5dialog.h \
     test0dialog.h \
-    getpatientdialog.h
+    getpatientdialog.h \
+    test6dialog.h
 
 FORMS    += mainwindow.ui \
     test1dialog.ui \
@@ -52,7 +54,8 @@ FORMS    += mainwindow.ui \
     test4dialog.ui \
     test5dialog.ui \
     test0dialog.ui \
-    getpatientdialog.ui
+    getpatientdialog.ui \
+    test6dialog.ui
 
 RESOURCES += \
     DTest.qrc

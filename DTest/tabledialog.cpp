@@ -11,6 +11,7 @@
 #include "test3dialog.h"
 #include "test4dialog.h"
 #include "test5dialog.h"
+#include "test6dialog.h"
 
 
 TableDialog::TableDialog(QWidget *parent) :
@@ -36,14 +37,15 @@ void TableDialog::createMenu(void)
     delMenu->addAction("&Бека...");
     delMenu->addAction("&ВІТЕ...");
     delMenu->addAction("В&ойтенко...");
+    delMenu->addAction("ВО&З...");
 }
 
 void TableDialog::removeTest(int no)
 {
     QSqlQuery query;
     QString dt = ui->tableWidget->model()->index(ui->tableWidget->currentRow(),3).data().toString();
-    int idStudent = ui->tableWidget->model()->index(ui->tableWidget->currentRow(),10).data().toInt(),
-        id = ui->tableWidget->model()->index(ui->tableWidget->currentRow(),11).data().toInt();
+    int id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(),12).data().toInt(),
+        id = ui->tableWidget->model()->index(ui->tableWidget->currentRow(),13).data().toInt();
 
     if (QMessageBox::question(this,tr("Підтвердження"),tr("Ви впевнені, що бажаєте вилучити інформацію?"),QMessageBox::Yes, QMessageBox::No) != QMessageBox::Yes)
         return;
@@ -51,8 +53,8 @@ void TableDialog::removeTest(int no)
     if (no == 0)
     {
         // Удалить все анкеты
-        for (int i = 1; i < 6; i++)
-            if (!query.exec(QString("DELETE FROM tbl_test%1 WHERE f_people = %2 AND f_dt = '%3'").arg(i).arg(idStudent).arg(dt)))
+        for (int i = 1; i < 7; i++)
+            if (!query.exec(QString("DELETE FROM tbl_test%1 WHERE f_people = %2 AND f_dt = '%3'").arg(i).arg(id_people).arg(dt)))
             {
                 QMessageBox::critical(this, tr("Помилка"),tr("Помилка доступу до бази даних!"), QMessageBox::Ok);
                 qDebug() << query.lastError();
@@ -68,7 +70,7 @@ void TableDialog::removeTest(int no)
     }
     else
     {
-        if (!query.exec(QString("DELETE FROM tbl_test%1 WHERE f_people = %2 AND f_dt = '%3'").arg(no).arg(idStudent).arg(dt)))
+        if (!query.exec(QString("DELETE FROM tbl_test%1 WHERE f_people = %2 AND f_dt = '%3'").arg(no).arg(id_people).arg(dt)))
         {
             QMessageBox::critical(this, tr("Помилка"),tr("Помилка доступу до бази даних!"), QMessageBox::Ok);
             qDebug() << query.lastError();
@@ -119,6 +121,8 @@ void TableDialog::showContextMenu(const QPoint &pos)
             removeTest(4);
         else if (selectedItem == delMenu->actions().at(5))
             removeTest(5);
+        else if (selectedItem == delMenu->actions().at(6))
+            removeTest(6);
     }
 }
 
@@ -131,7 +135,7 @@ void TableDialog::slotTest4(void)
     int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
         height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
         weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 11).data().toInt();
+        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
     dlg = new Test4Dialog(dt,name,sex,age,height,weight,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
@@ -139,6 +143,21 @@ void TableDialog::slotTest4(void)
 
     delete dlg;
 }
+
+void TableDialog::slotTest6(void)
+{
+    Test6Dialog *dlg;
+    QString dt = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 5).data().toString(),
+            name = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 0).data().toString();
+    int id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
+
+    dlg = new Test6Dialog(dt,name,id_people,this);
+    if (dlg->exec() != QDialog::Rejected)
+        ui->tableWidget->setItem(ui->tableWidget->currentRow(), 11, new QTableWidgetItem(QString("%1 (%2)").arg(dlg->getLegend()).arg(dlg->getResults())));
+
+    delete dlg;
+}
+
 void TableDialog::slotTest5(void)
 {
     Test5Dialog *dlg;
@@ -148,7 +167,7 @@ void TableDialog::slotTest5(void)
     int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
         height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
         weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 11).data().toInt();
+        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
     dlg = new Test5Dialog(dt,name,sex,age,height,weight,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
@@ -171,6 +190,7 @@ void TableDialog::setEnabledBtn(QItemSelection,QItemSelection)
     ui->tb3->setEnabled(isSel);
     ui->tb4->setEnabled(isSel);
     ui->tb5->setEnabled(isSel);
+    ui->tb6->setEnabled(isSel);
     ui->tbName->setEnabled(isSel);
 }
 
@@ -205,7 +225,7 @@ void TableDialog::slotTest1(void)
     int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
         height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
         weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 11).data().toInt(),
+        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt(),
         res1,
         res2,
         res3;
@@ -231,7 +251,7 @@ void TableDialog::slotTest2(void)
     int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
         height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
         weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 11).data().toInt();
+        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
     dlg = new Test2Dialog(dt,name,sex,age,height,weight,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
@@ -248,7 +268,7 @@ void TableDialog::slotTest3(void)
     int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
         height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
         weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 11).data().toInt();
+        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
     dlg = new Test3Dialog(dt,name,sex,age,height,weight,id_people,this);
     if (dlg->exec() != QDialog::Rejected)
@@ -265,7 +285,7 @@ void TableDialog::slotName(void)
     int age = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 2).data().toInt(),
         height = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 3).data().toInt(),
         weight = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 4).data().toInt(),
-        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 11).data().toInt();
+        id_people = ui->tableWidget->model()->index(ui->tableWidget->currentRow(), 12).data().toInt();
 
     dlg->initDialog(id_people);
     if (dlg->exec() == QDialog::Accepted)
@@ -300,9 +320,10 @@ void TableDialog::setupDialog(void)
     ui->tb3->setEnabled(false);
     ui->tb4->setEnabled(false);
     ui->tb5->setEnabled(false);
+    ui->tb6->setEnabled(false);
     ui->tbName->setEnabled(false);
-                            //        0       1    2       3         4    5       6        7        8        9         10       11       12       13      14       15       16      17       18      19       20         21
-    if (!query.exec(QString("SELECT f_name,f_sex,f_age,f_height,f_weight,f_dt,f_res11,f_legend11,f_res12,f_legend12,f_res13,f_legend13,f_res2,f_legend2,f_res3,f_legend3,f_res4,f_legend4,f_res5,f_legend5,f_people,tbl_results.id \
+                            //        0       1    2       3         4    5       6        7        8        9         10       11       12       13      14       15       16      17       18      19       20      21       22        23
+    if (!query.exec(QString("SELECT f_name,f_sex,f_age,f_height,f_weight,f_dt,f_res11,f_legend11,f_res12,f_legend12,f_res13,f_legend13,f_res2,f_legend2,f_res3,f_legend3,f_res4,f_legend4,f_res5,f_legend5,f_res6,f_legend6,f_people,tbl_results.id \
                              FROM tbl_results,tbl_people \
                              WHERE  tbl_people.id = tbl_results.f_people ")))
     {
@@ -337,14 +358,16 @@ void TableDialog::setupDialog(void)
             ui->tableWidget->setItem(i, 9, new QTableWidgetItem(QString("%1 (%2)").arg(query.value(17).toString()).arg(query.value(16).toString()))); // Тест4
         if (!query.value(18).isNull())
             ui->tableWidget->setItem(i, 10, new QTableWidgetItem(QString("%1 (%2)").arg(query.value(19).toString()).arg(query.value(18).toString()))); // Тест5
-        ui->tableWidget->setItem(i, 11, new QTableWidgetItem(query.value(20).toString()));  // Id студента
-        ui->tableWidget->setItem(i, 12, new QTableWidgetItem(query.value(21).toString()));  // Id
+        if (!query.value(20).isNull())
+            ui->tableWidget->setItem(i, 11, new QTableWidgetItem(QString("%1 (%2)").arg(query.value(21).toString()).arg(query.value(20).toString()))); // Тест5
+        ui->tableWidget->setItem(i, 12, new QTableWidgetItem(query.value(22).toString()));  // Id пациента
+        ui->tableWidget->setItem(i, 13, new QTableWidgetItem(query.value(23).toString()));  // Id
         i++;
     }
     ui->tableWidget->horizontalHeader()->resizeSections(QHeaderView::ResizeToContents);
     ui->tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
-    ui->tableWidget->setColumnHidden(11,true);
     ui->tableWidget->setColumnHidden(12,true);
+    ui->tableWidget->setColumnHidden(13,true);
 
 
     connect(ui->tableWidget->selectionModel(), SIGNAL(selectionChanged(QItemSelection, QItemSelection)), this, SLOT(setEnabledBtn(QItemSelection, QItemSelection)));
@@ -358,6 +381,7 @@ void TableDialog::setupDialog(void)
     connect(ui->tb3, SIGNAL(clicked(bool)), this, SLOT(slotTest3()));
     connect(ui->tb4, SIGNAL(clicked(bool)), this, SLOT(slotTest4()));
     connect(ui->tb5, SIGNAL(clicked(bool)), this, SLOT(slotTest5()));
+    connect(ui->tb6, SIGNAL(clicked(bool)), this, SLOT(slotTest6()));
 
     connect(ui->tbName, SIGNAL(clicked(bool)), this, SLOT(slotName()));
 

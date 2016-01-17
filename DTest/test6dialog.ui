@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Test6Dialog</class>
+ <widget class="QDialog" name="Test6Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1090</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Краткий опросник ВОЗ для оценки качества жизни</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-3309</y>
+        <width>1053</width>
+        <height>3860</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_50">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>1. Как Вы оцениваете качество Вашей жизни?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb1_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb1_4">
+            <property name="text">
+             <string>Хорошо</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb1_1">
+            <property name="text">
+             <string>Очень плохо</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb1_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb1_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>2. Насколько Вы удовлетворены состоянием своего здоровья?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb2_4">
+            <property name="text">
+             <string>Удовлетворён</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb2_3">
+            <property name="text">
+             <string>Ни то, ни другое </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb2_2">
+            <property name="text">
+             <string>Не удовлетворен </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb2_1">
+            <property name="text">
+             <string>Очень не удовлетворен </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb2_5">
+            <property name="text">
+             <string>Очень удовлетворён </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>3. По Вашему мнению, в какой степени физические боли мешают Вам выполнять свои обязанности?</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb3_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb3_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb3_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb3_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb3_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_66">
+         <property name="title">
+          <string>4. В какой степени Вы нуждаетесь в какой-либо медицинской помощи для нормального функционирования в своей повседневной жизни? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb4_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb4_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb4_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb4_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb4_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_65">
+         <property name="title">
+          <string>5. Насколько Вы довольны своею жизнью? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb5_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb5_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb5_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb5_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb5_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_58">
+         <property name="title">
+          <string>6. Насколько, по Вашему мнению, Ваша жизнь наполнена смыслом? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb6_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb6_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb6_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb6_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb6_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_67">
+         <property name="title">
+          <string>7. Насколько хорошо Вы можете концентрировать внимание? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb7_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb7_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb7_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb7_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb7_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_47">
+         <property name="title">
+          <string>8. Насколько безопасно Вы чувствуете себя в повседневной жизни? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb8_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb8_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb8_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb8_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb8_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_39">
+         <property name="title">
+          <string>9. Насколько здоровой является физическая среда вокруг Вас? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb9_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb9_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb9_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb9_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb9_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_64">
+         <property name="title">
+          <string>10. Достаточно ли у Вас энергии для повседневной жизни? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb10_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb10_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb10_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb10_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb10_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_48">
+         <property name="title">
+          <string>11. Способны ли Вы смириться со своим внешним видом? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb11_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb11_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb11_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb11_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb11_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_46">
+         <property name="title">
+          <string>12. Достаточно ли у Вас денег для удовлетворения Ваших потребностей? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb12_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb12_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb12_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb12_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb12_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_57">
+         <property name="title">
+          <string>13. Насколько доступна для Вас информация, необходимая в Вашей повседневной жизни? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb13_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb13_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb13_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb13_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb13_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_45">
+         <property name="title">
+          <string>14. В какой мере у Вас есть возможности для отдыха и развлечений? </string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="2" column="0">
+           <widget class="QRadioButton" name="rb14_3">
+            <property name="text">
+             <string>Умеренно </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QRadioButton" name="rb14_4">
+            <property name="text">
+             <string>В значительной степени </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QRadioButton" name="rb14_1">
+            <property name="text">
+             <string>Вовсе нет </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QRadioButton" name="rb14_2">
+            <property name="text">
+             <string>Немного </string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QRadioButton" name="rb14_5">
+            <property name="text">
+             <string>Чрезмерно </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_44">
+         <property name="title">
+          <string>15. Насколько легко Вы можете добраться до нужных Вам мест?</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <item>
+           <widget class="QRadioButton" name="rb15_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb15_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_40">
+         <property name="title">
+          <string>16. Насколько Вы удовлетворены своим сном? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb16_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb16_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_59">
+         <property name="title">
+          <string>17. Насколько Вы удовлетворены способностью выполнять свои повседневные обязанности?  </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb17_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb17_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_38">
+         <property name="title">
+          <string>18. Насколько Вы удовлетворены своею трудоспособностью? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb18_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb18_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_53">
+         <property name="title">
+          <string>19. Насколько Вы довольны собой?  </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb19_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb19_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_33">
+         <property name="title">
+          <string>20. Насколько Вы удовлетворены личными взаимоотношениями? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb20_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb20_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_32">
+         <property name="title">
+          <string>21. Насколько Вы удовлетворены своею сексуальной жизнью?  </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb21_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb21_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_69">
+         <property name="title">
+          <string>22. Насколько Вы удовлетворены поддержкой, которую Вы получаете от своих друзей?  </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb22_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb22_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb22_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb22_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb22_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_52">
+         <property name="title">
+          <string>23. Насколько Вы удовлетворены условиями в месте Вашего проживания?  </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb23_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb23_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb23_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb23_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb23_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_68">
+         <property name="title">
+          <string>24. Насколько Вы удовлетворены доступностью медицинского обслуживания для Вас? </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb24_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb24_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb24_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb24_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb24_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_29">
+         <property name="title">
+          <string>25. Насколько Вы удовлетворены транспортом, которым Вы пользуетесь?  </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb25_1">
+            <property name="text">
+             <string>Очень плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb25_2">
+            <property name="text">
+             <string>Плохо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb25_3">
+            <property name="text">
+             <string>Ни плохо, ни хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb25_4">
+            <property name="text">
+             <string>Хорошо </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb25_5">
+            <property name="text">
+             <string>Очень хорошо </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_31">
+         <property name="title">
+          <string>26. Как часто у Вас были отрицательные переживания, например плохое настроение, отчаяние, тревога, депрессия?  </string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <item>
+           <widget class="QRadioButton" name="rb26_1">
+            <property name="text">
+             <string>Никогда </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb26_2">
+            <property name="text">
+             <string>Изредка </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb26_3">
+            <property name="text">
+             <string>Довольно часто </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb26_4">
+            <property name="text">
+             <string>Очень часто </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rb26_5">
+            <property name="text">
+             <string>Всегда </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Test6Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Test6Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

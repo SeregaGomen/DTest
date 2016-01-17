@@ -23,6 +23,7 @@ public slots:
     void slotTest3(void);
     void slotTest4(void);
     void slotTest5(void);
+    void slotTest6(void);
     void slotStudent(void);
     void slotTable(void);
     void slotExport(void);

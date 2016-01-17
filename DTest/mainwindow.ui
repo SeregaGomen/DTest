@@ -41,6 +41,7 @@
     <addaction name="actionTest3"/>
     <addaction name="actionTest4"/>
     <addaction name="actionTest5"/>
+    <addaction name="actionTest6"/>
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
@@ -88,6 +89,7 @@
    <addaction name="actionTest3"/>
    <addaction name="actionTest4"/>
    <addaction name="actionTest5"/>
+   <addaction name="actionTest6"/>
    <addaction name="separator"/>
   </widget>
   <action name="actionTest1">
@@ -251,6 +253,21 @@
     <string>Анкета пацієнта</string>
    </property>
   </action>
+  <action name="actionTest6">
+   <property name="icon">
+    <iconset resource="DTest.qrc">
+     <normaloff>:/images/d7.png</normaloff>:/images/d7.png</iconset>
+   </property>
+   <property name="text">
+    <string>Рівня &amp;життя...</string>
+   </property>
+   <property name="toolTip">
+    <string>Опитувальник ВОЗ для оцінки рівня життя</string>
+   </property>
+   <property name="statusTip">
+    <string>Опитувальник ВОЗ для оцінки рівня життя</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
@@ -406,6 +423,22 @@
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>slotTest0()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTest6</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotTest6()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>-1</x>

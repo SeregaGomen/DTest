@@ -24,6 +24,7 @@
 #include "test3dialog.h"
 #include "test4dialog.h"
 #include "test5dialog.h"
+#include "test6dialog.h"
 #include "studentdialog.h"
 #include "resultdialog.h"
 #include "tabledialog.h"
@@ -209,6 +210,21 @@ void MainWindow::slotTest5(void)
     if (sdlg->exec() == QDialog::Accepted)
     {
          dlg = new Test5Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getSex(),sdlg->getAge(),sdlg->getHeight(),sdlg->getWeight(),sdlg->getID(),this);
+         dlg->exec();
+         delete dlg;
+    }
+    delete sdlg;
+}
+
+void MainWindow::slotTest6(void)
+{
+    Test6Dialog *dlg;
+    GetPatientDialog* sdlg = new GetPatientDialog(this);
+
+    sdlg->initDialog();
+    if (sdlg->exec() == QDialog::Accepted)
+    {
+         dlg = new Test6Dialog(sdlg->getDate(),sdlg->getName(),sdlg->getID(),this);
          dlg->exec();
          delete dlg;
     }
@@ -671,8 +687,16 @@ bool MainWindow::createDB(QString fileName)
         db.close();
         return false;
     }
+    // Test5
+    if (!query.exec(QString("CREATE TABLE tbl_test6 (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_res TEXT)")))
+    {
+        QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
+        qDebug() << db.lastError();
+        db.close();
+        return false;
+    }
     // Results
-    if (!query.exec(QString("CREATE TABLE tbl_results (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_id1 INTEGER, f_res11 INTEGER, f_legend11 TEXT, f_res12 INTEGER, f_legend12 TEXT, f_res13 INTEGER, f_legend13 TEXT, f_id2 INTEGER, f_res2 INTEGER, f_legend2 TEXT, f_id3 INTEGER, f_res3 INTEGER, f_legend3 TEXT, f_id4 INTEGER, f_res4 INTEGER, f_legend4 TEXT, f_id5 INTEGER, f_res5 INTEGER, f_legend5 TEXT)")))
+    if (!query.exec(QString("CREATE TABLE tbl_results (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_people INTEGER NOT NULL, f_dt TEXT, f_id1 INTEGER, f_res11 INTEGER, f_legend11 TEXT, f_res12 INTEGER, f_legend12 TEXT, f_res13 INTEGER, f_legend13 TEXT, f_id2 INTEGER, f_res2 INTEGER, f_legend2 TEXT, f_id3 INTEGER, f_res3 INTEGER, f_legend3 TEXT, f_id4 INTEGER, f_res4 INTEGER, f_legend4 TEXT, f_id5 INTEGER, f_res5 INTEGER, f_legend5 TEXT, f_id6 INTEGER, f_res6 INTEGER, f_legend6 TEXT)")))
     {
         QMessageBox::critical(this, tr("Помилка"),tr("Помилка створення бази даних!"), QMessageBox::Ok);
         qDebug() << db.lastError();
