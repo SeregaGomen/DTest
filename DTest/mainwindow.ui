@@ -53,9 +53,6 @@
     <property name="title">
      <string>&amp;Результати</string>
     </property>
-    <addaction name="actionStudent"/>
-    <addaction name="actionMediane"/>
-    <addaction name="separator"/>
     <addaction name="actionTable"/>
     <addaction name="separator"/>
     <addaction name="actionXMLExport"/>

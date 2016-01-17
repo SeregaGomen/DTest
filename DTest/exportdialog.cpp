@@ -14,8 +14,8 @@ ExportDialog::ExportDialog(QWidget *parent) :
     connect(ui->cbTest5, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
     connect(ui->cbTest6, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
     connect(ui->cbName, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
-    connect(ui->cbGroup, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
-    connect(ui->cbClass, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
+    connect(ui->cbAge, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
+    connect(ui->cbSex, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
     connect(ui->cbDate, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
     connect(ui->cbLegend, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
     connect(ui->cbResult, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
@@ -29,7 +29,7 @@ ExportDialog::~ExportDialog()
 void ExportDialog::slotCBClicked(bool)
 {
     bool isTest = ui->cbTest1->isChecked() || ui->cbTest2->isChecked() || ui->cbTest3->isChecked() || ui->cbTest4->isChecked() || ui->cbTest5->isChecked() || ui->cbTest6->isChecked(),
-         isFields = ui->cbName->isChecked() || ui->cbGroup->isChecked() || ui->cbDate->isChecked() || ui->cbClass->isChecked() || ui->cbResult->isChecked() || ui->cbLegend->isChecked();
+         isFields = ui->cbName->isChecked() || ui->cbSex->isChecked() || ui->cbDate->isChecked() || ui->cbAge->isChecked() || ui->cbResult->isChecked() || ui->cbLegend->isChecked();
 
     ui->buttonBox->button(QDialogButtonBox::Ok)->setEnabled(isTest && isFields);
 }
@@ -46,8 +46,8 @@ QMap<QString,bool> ExportDialog::getMap(void)
     map["Test6"] = ui->cbTest6->isChecked();
 
     map["Name"] = ui->cbName->isChecked();
-    map["Group"] = ui->cbGroup->isChecked();
-    map["Class"] = ui->cbClass->isChecked();
+    map["Age"] = ui->cbAge->isChecked();
+    map["Sex"] = ui->cbSex->isChecked();
     map["Date"] = ui->cbDate->isChecked();
     map["Result"] = ui->cbResult->isChecked();
     map["Legend"] = ui->cbLegend->isChecked();

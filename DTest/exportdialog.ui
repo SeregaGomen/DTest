@@ -51,7 +51,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Діяльнісно-операційний тест</string>
+     <string>Айзенка</string>
     </property>
     <property name="checked">
      <bool>true</bool>
@@ -67,7 +67,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Інформаційно-технологічний тест</string>
+     <string>Larocque</string>
     </property>
     <property name="checked">
      <bool>true</bool>
@@ -83,7 +83,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Когнітивний тест з маркетингу туризму</string>
+     <string>Бека</string>
     </property>
     <property name="checked">
      <bool>true</bool>
@@ -99,7 +99,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Когнітивний тест з менеджменту</string>
+     <string>ВІТЕ</string>
     </property>
     <property name="checked">
      <bool>true</bool>
@@ -115,7 +115,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Особистісно-творчий тест</string>
+     <string>Войтенко</string>
     </property>
     <property name="checked">
      <bool>true</bool>
@@ -131,7 +131,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Мотиваційний тест</string>
+     <string>ВОЗ</string>
     </property>
     <property name="checked">
      <bool>true</bool>
@@ -166,7 +166,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QCheckBox" name="cbGroup">
+   <widget class="QCheckBox" name="cbAge">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -176,13 +176,13 @@
      </rect>
     </property>
     <property name="text">
-     <string>Група</string>
+     <string>Вік</string>
     </property>
     <property name="checked">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QCheckBox" name="cbClass">
+   <widget class="QCheckBox" name="cbSex">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -192,7 +192,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Курс</string>
+     <string>Стать</string>
     </property>
     <property name="checked">
      <bool>true</bool>

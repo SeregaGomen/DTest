@@ -423,7 +423,8 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                         "Тест Larocque",
                         "Тест Бека",
                         "Тест ВІТЕ",
-                        "Тест Войтенко"
+                        "Тест Войтенко",
+                        "Тест ВОЗ"
                       };
 
     if (!file.open(QIODevice::WriteOnly))
@@ -449,7 +450,7 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
         stream.writeEndElement(); // Style
     stream.writeEndElement(); // Styles
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 6; i++)
     {
         if (map[QString("Test%1").arg(i + 1)] == false)
             continue;
@@ -476,6 +477,21 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                 stream.writeStartElement("ss:Column");
                     stream.writeAttribute("ss:Width","120");
                 stream.writeEndElement(); // Column
+                if (i == 0) // Для теста Айзенка
+                {
+                    stream.writeStartElement("ss:Column");
+                        stream.writeAttribute("ss:Width","60");
+                    stream.writeEndElement(); // Column
+                    stream.writeStartElement("ss:Column");
+                        stream.writeAttribute("ss:Width","120");
+                    stream.writeEndElement(); // Column
+                    stream.writeStartElement("ss:Column");
+                        stream.writeAttribute("ss:Width","60");
+                    stream.writeEndElement(); // Column
+                    stream.writeStartElement("ss:Column");
+                        stream.writeAttribute("ss:Width","120");
+                    stream.writeEndElement(); // Column
+                }
 
                     // Заголовок
                     stream.writeStartElement("ss:Row");
@@ -489,21 +505,21 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                                 stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
-                        if (map["Group"] == true)
+                        if (map["Sex"] == true)
                         {
                             stream.writeStartElement("ss:Cell");
                                 stream.writeStartElement("ss:Data");
                                     stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA("Група");
+                                    stream.writeCDATA("Стать");
                                 stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
-                        if (map["Class"] == true)
+                        if (map["Age"] == true)
                         {
                             stream.writeStartElement("ss:Cell");
                                 stream.writeStartElement("ss:Data");
                                     stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA("Курс");
+                                    stream.writeCDATA("Вік");
                                 stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
@@ -516,33 +532,106 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                                 stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
-                        if (map["Result"] == true)
+                        if (i == 0)
                         {
-                            stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                    stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA("Результат");
-                                stream.writeEndElement(); // Data
-                            stream.writeEndElement(); // Cell
+                            if (map["Result"] == true)
+                            {
+                                stream.writeStartElement("ss:Cell");
+                                    stream.writeStartElement("ss:Data");
+                                        stream.writeAttribute("ss:Type","String");
+                                        stream.writeCDATA("Результат1");
+                                    stream.writeEndElement(); // Data
+                                stream.writeEndElement(); // Cell
+                            }
+                            if (map["Legend"] == true)
+                            {
+                                stream.writeStartElement("ss:Cell");
+                                    stream.writeStartElement("ss:Data");
+                                        stream.writeAttribute("ss:Type","String");
+                                        stream.writeCDATA("Легенда1");
+                                    stream.writeEndElement(); // Data
+                                stream.writeEndElement(); // Cell
+                            }
+                            if (map["Result"] == true)
+                            {
+                                stream.writeStartElement("ss:Cell");
+                                    stream.writeStartElement("ss:Data");
+                                        stream.writeAttribute("ss:Type","String");
+                                        stream.writeCDATA("Результат2");
+                                    stream.writeEndElement(); // Data
+                                stream.writeEndElement(); // Cell
+                            }
+                            if (map["Legend"] == true)
+                            {
+                                stream.writeStartElement("ss:Cell");
+                                    stream.writeStartElement("ss:Data");
+                                        stream.writeAttribute("ss:Type","String");
+                                        stream.writeCDATA("Легенда2");
+                                    stream.writeEndElement(); // Data
+                                stream.writeEndElement(); // Cell
+                            }
+                            if (map["Result"] == true)
+                            {
+                                stream.writeStartElement("ss:Cell");
+                                    stream.writeStartElement("ss:Data");
+                                        stream.writeAttribute("ss:Type","String");
+                                        stream.writeCDATA("Результат3");
+                                    stream.writeEndElement(); // Data
+                                stream.writeEndElement(); // Cell
+                            }
+                            if (map["Legend"] == true)
+                            {
+                                stream.writeStartElement("ss:Cell");
+                                    stream.writeStartElement("ss:Data");
+                                        stream.writeAttribute("ss:Type","String");
+                                        stream.writeCDATA("Легенда3");
+                                    stream.writeEndElement(); // Data
+                                stream.writeEndElement(); // Cell
+                            }
                         }
-                        if (map["Legend"] == true)
+                        else
                         {
-                            stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                    stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA("Легенда");
-                                stream.writeEndElement(); // Data
-                            stream.writeEndElement(); // Cell
+                            if (map["Result"] == true)
+                            {
+                                stream.writeStartElement("ss:Cell");
+                                    stream.writeStartElement("ss:Data");
+                                        stream.writeAttribute("ss:Type","String");
+                                        stream.writeCDATA("Результат");
+                                    stream.writeEndElement(); // Data
+                                stream.writeEndElement(); // Cell
+                            }
+                            if (map["Legend"] == true)
+                            {
+                                stream.writeStartElement("ss:Cell");
+                                    stream.writeStartElement("ss:Data");
+                                        stream.writeAttribute("ss:Type","String");
+                                        stream.writeCDATA("Легенда");
+                                    stream.writeEndElement(); // Data
+                                stream.writeEndElement(); // Cell
+                            }
                         }
                 stream.writeEndElement(); // Row
 
                 // Данные
-                if (!query.exec(QString("SELECT f_name,f_group,f_class,f_dt,f_res%1,f_legend%1 FROM tbl_results,tbl_people WHERE tbl_people.id = tbl_results.f_people ").arg(i + 1)))
+                if (i == 0)
                 {
-                    QMessageBox::critical(this, tr("Помилка"),tr("Помилка доступу до бази даних!"), QMessageBox::Ok);
-                    qDebug() << query.lastError();
-                    file.close();
-                    return;
+                    if (!query.exec(QString("SELECT f_name,f_sex,f_age,f_dt,f_res11,f_legend11,f_res12,f_legend12,f_res13,f_legend13 FROM tbl_results,tbl_people WHERE tbl_people.id = tbl_results.f_people ")))
+                    {
+                        QMessageBox::critical(this, tr("Помилка"),tr("Помилка доступу до бази даних!"), QMessageBox::Ok);
+                        qDebug() << query.lastError();
+                        file.close();
+                        return;
+                    }
+                }
+                else
+                {
+                    if (!query.exec(QString("SELECT f_name,f_sex,f_age,f_dt,f_res%1,f_legend%1 FROM tbl_results,tbl_people WHERE tbl_people.id = tbl_results.f_people ").arg(i + 1)))
+                    {
+                        QMessageBox::critical(this, tr("Помилка"),tr("Помилка доступу до бази даних!"), QMessageBox::Ok);
+                        qDebug() << query.lastError();
+                        file.close();
+                        return;
+                    }
                 }
                 while (query.next())
                 {
@@ -556,7 +645,7 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                             stream.writeEndElement(); // Data
                         stream.writeEndElement(); // Cell
                     }
-                    if (map["Group"] == true)
+                    if (map["Sex"] == true)
                     {
                         stream.writeStartElement("ss:Cell");
                             stream.writeStartElement("ss:Data");
@@ -565,7 +654,7 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                             stream.writeEndElement(); // Data
                         stream.writeEndElement(); // Cell
                     }
-                    if (map["Class"] == true)
+                    if (map["Age"] == true)
                     {
                         stream.writeStartElement("ss:Cell");
                             stream.writeStartElement("ss:Data");
@@ -585,21 +674,69 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                     }
                     if (map["Result"] == true)
                     {
-                        stream.writeStartElement("ss:Cell");
-                            stream.writeStartElement("ss:Data");
-                            stream.writeAttribute("ss:Type","String");
-                                stream.writeCDATA(query.value(4).toString());
-                            stream.writeEndElement(); // Data
-                        stream.writeEndElement(); // Cell
+                        if (i == 0)
+                        {
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA(query.value(4).toString());
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA(query.value(6).toString());
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA(query.value(8).toString());
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
+                        else
+                        {
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA(query.value(4).toString());
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
                     }
                     if (map["Legend"] == true)
                     {
-                        stream.writeStartElement("ss:Cell");
-                            stream.writeStartElement("ss:Data");
-                            stream.writeAttribute("ss:Type","String");
-                                stream.writeCDATA(query.value(5).toString());
-                            stream.writeEndElement(); // Data
-                        stream.writeEndElement(); // Cell
+                        if (i == 0)
+                        {
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA(query.value(5).toString());
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA(query.value(7).toString());
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA(query.value(9).toString());
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
+                        else
+                        {
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA(query.value(5).toString());
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
                     }
                     stream.writeEndElement(); // Row
                 }
