@@ -148,7 +148,7 @@ void Test4Dialog::accept(void)
         while (query.next())
             id = query.value(0).toInt();
     }
-    QMessageBox::information(this, tr("Результат"),tr("Результат тестування: %1").arg(getLegend()), QMessageBox::Ok);
+    QMessageBox::information(this, tr("Результат"),tr("Результат тестування: %2 - %1").arg(getLegend()).arg(res), QMessageBox::Ok);
 
     // Сохраняем результаты
     isFind = false;

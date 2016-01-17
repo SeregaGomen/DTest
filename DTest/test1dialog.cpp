@@ -149,7 +149,7 @@ void Test1Dialog::accept(void)
     }
     getLegend(legend1,legend2,legend3);
 
-    QMessageBox::information(this, tr("Результат"),tr("Результат тестування: %1, %2, %3").arg(legend1).arg(legend2).arg(legend3), QMessageBox::Ok);
+    QMessageBox::information(this, tr("Результат"),tr("Результат тестування: %4 - %1; %5 - %2; %6 - %3").arg(legend1).arg(legend2).arg(legend3).arg(res1).arg(res2).arg(res3), QMessageBox::Ok);
 
     // Сохраняем результаты
     isFind = false;

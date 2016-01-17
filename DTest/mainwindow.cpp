@@ -475,7 +475,7 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                     stream.writeAttribute("ss:Width","60");
                 stream.writeEndElement(); // Column
                 stream.writeStartElement("ss:Column");
-                    stream.writeAttribute("ss:Width","240");
+                    stream.writeAttribute("ss:Width","60");
                 stream.writeEndElement(); // Column
                 if (i == 0) // Для теста Айзенка
                 {
@@ -483,13 +483,13 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                         stream.writeAttribute("ss:Width","60");
                     stream.writeEndElement(); // Column
                     stream.writeStartElement("ss:Column");
-                        stream.writeAttribute("ss:Width","240");
+                        stream.writeAttribute("ss:Width","60");
                     stream.writeEndElement(); // Column
                     stream.writeStartElement("ss:Column");
                         stream.writeAttribute("ss:Width","60");
                     stream.writeEndElement(); // Column
                     stream.writeStartElement("ss:Column");
-                        stream.writeAttribute("ss:Width","240");
+                        stream.writeAttribute("ss:Width","60");
                     stream.writeEndElement(); // Column
                 }
 

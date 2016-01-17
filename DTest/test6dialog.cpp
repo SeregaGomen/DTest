@@ -108,7 +108,7 @@ void Test6Dialog::accept(void)
             id = query.value(0).toInt();
     }
     legend = getLegend();
-    QMessageBox::information(this, tr("Результат"),tr("Результат тестування: %1 (%2)").arg(legend).arg(res), QMessageBox::Ok);
+    QMessageBox::information(this, tr("Результат"),tr("Результат тестування: %2 - %1").arg(legend).arg(res), QMessageBox::Ok);
 
     // Сохраняем результаты
     isFind = false;
@@ -220,10 +220,10 @@ bool Test6Dialog::calcRes(QString& s_res)
 QString Test6Dialog::getLegend(void)
 {
     if (res <= 71)
-        return QString("Низкий уровень удовлетворенности качеством жизни");
+        return QString("низкий уровень удовлетворенности качеством жизни");
     else if (res > 71 && res <= 89)
-        return QString("Средний уровень удовлетворенности качеством жизни");
-    return QString("Высокий уровень удовлетворенности качеством жизни");
+        return QString("средний уровень удовлетворенности качеством жизни");
+    return QString("высокий уровень удовлетворенности качеством жизни");
 }
 
 int Test6Dialog::getResults(void)

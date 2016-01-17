@@ -115,7 +115,7 @@ void Test3Dialog::accept(void)
     }
 
 
-    QMessageBox::information(this, tr("Результат"),tr("Результат тестування: %1").arg(getLegend()), QMessageBox::Ok);
+    QMessageBox::information(this, tr("Результат"),tr("Результат тестування: %2 - %1").arg(getLegend()).arg(res), QMessageBox::Ok);
 
     // Сохраняем результаты
     isFind = false;
