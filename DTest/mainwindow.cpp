@@ -475,7 +475,7 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                     stream.writeAttribute("ss:Width","60");
                 stream.writeEndElement(); // Column
                 stream.writeStartElement("ss:Column");
-                    stream.writeAttribute("ss:Width","120");
+                    stream.writeAttribute("ss:Width","240");
                 stream.writeEndElement(); // Column
                 if (i == 0) // Для теста Айзенка
                 {
@@ -483,13 +483,13 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                         stream.writeAttribute("ss:Width","60");
                     stream.writeEndElement(); // Column
                     stream.writeStartElement("ss:Column");
-                        stream.writeAttribute("ss:Width","120");
+                        stream.writeAttribute("ss:Width","240");
                     stream.writeEndElement(); // Column
                     stream.writeStartElement("ss:Column");
                         stream.writeAttribute("ss:Width","60");
                     stream.writeEndElement(); // Column
                     stream.writeStartElement("ss:Column");
-                        stream.writeAttribute("ss:Width","120");
+                        stream.writeAttribute("ss:Width","240");
                     stream.writeEndElement(); // Column
                 }
 
@@ -672,69 +672,81 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                             stream.writeEndElement(); // Data
                         stream.writeEndElement(); // Cell
                     }
-                    if (map["Result"] == true)
+                    if (i == 0)
                     {
-                        if (i == 0)
+                        if (map["Result"] == true)
                         {
                             stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA(query.value(4).toString());
-                                stream.writeEndElement(); // Data
-                            stream.writeEndElement(); // Cell
-                            stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA(query.value(6).toString());
-                                stream.writeEndElement(); // Data
-                            stream.writeEndElement(); // Cell
-                            stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA(query.value(8).toString());
-                                stream.writeEndElement(); // Data
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(query.value(4).toString());
+                            stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
-                        else
+                        if (map["Legend"] == true)
                         {
                             stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA(query.value(4).toString());
-                                stream.writeEndElement(); // Data
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(query.value(5).toString());
+                            stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
+                        if (map["Result"] == true)
+                        {
+                            stream.writeStartElement("ss:Cell");
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(query.value(6).toString());
+                            stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
+                        if (map["Legend"] == true)
+                        {
+                            stream.writeStartElement("ss:Cell");
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(query.value(7).toString());
+                            stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
+                        if (map["Result"] == true)
+                        {
+                            stream.writeStartElement("ss:Cell");
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(query.value(8).toString());
+                            stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
+                        if (map["Legend"] == true)
+                        {
+                            stream.writeStartElement("ss:Cell");
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(query.value(9).toString());
+                            stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
                     }
-                    if (map["Legend"] == true)
+                    else
                     {
-                        if (i == 0)
+                        if (map["Result"] == true)
                         {
                             stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA(query.value(5).toString());
-                                stream.writeEndElement(); // Data
-                            stream.writeEndElement(); // Cell
-                            stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA(query.value(7).toString());
-                                stream.writeEndElement(); // Data
-                            stream.writeEndElement(); // Cell
-                            stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA(query.value(9).toString());
-                                stream.writeEndElement(); // Data
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(query.value(4).toString());
+                            stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
-                        else
+                        if (map["Legend"] == true)
                         {
                             stream.writeStartElement("ss:Cell");
-                                stream.writeStartElement("ss:Data");
-                                stream.writeAttribute("ss:Type","String");
-                                    stream.writeCDATA(query.value(5).toString());
-                                stream.writeEndElement(); // Data
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(query.value(5).toString());
+                            stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
                     }
