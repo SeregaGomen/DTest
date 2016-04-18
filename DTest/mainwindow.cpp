@@ -425,7 +425,39 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                         "Тест ВІТЕ",
                         "Тест Войтенко",
                         "Тест ВОЗ"
-                      };
+                      },
+            patientColumn[] = {
+                                "ФИО",
+                                "Пол",
+                                "Возраст",
+                                "Рост",
+                                "Вес",
+                                "АДс",
+                                "АДд",
+                                "Статическая балансировка",
+                                "Задержка дыхания",
+                                "Семейное положение",
+                                "Доход на одного члена семьи",
+                                "Образование",
+                                "Социальное положение",
+                                "Сопутствующие заболевания",
+                                "Вредные привычки",
+                                "Нарушения в анализах",
+                                "Прием лекарств",
+                                "Количество принимаемых лекарств",
+                                "Ожирение у кровных родственников",
+                                "Наличие избыточного веса (по мнению пациента)",
+                                "Длительность наличия избыточного веса",
+                                "Причина увеличения веса",
+                                "Наличие попыток изменить образ жизни",
+                                "Попытки снизить вес",
+                                "Эффект от попыток",
+                                "Макс. вес",
+                                "Мин. вес",
+                                "Влияние веса на жизнь пациента",
+                                "Желание снизить вес",
+                                "Готовность к хирургическому лечению"
+                              };
 
     if (!file.open(QIODevice::WriteOnly))
     {
@@ -449,6 +481,49 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
 
         stream.writeEndElement(); // Style
     stream.writeEndElement(); // Styles
+
+    // Вывод стартовой анкеты (пациента)
+    stream.writeStartElement("ss:Worksheet");
+        stream.writeAttribute("ss:Name", "Пациенты");
+            stream.writeStartElement("ss:Table");
+                // Заголовки
+                stream.writeStartElement("ss:Row");
+                stream.writeAttribute("ss:StyleID","1");
+                for (int i = 0; i < 30; i++)
+                {
+                    stream.writeStartElement("ss:Cell");
+                        stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                            stream.writeCDATA(patientColumn[i]);
+                        stream.writeEndElement(); // Data
+                    stream.writeEndElement(); // Cell
+                }
+                stream.writeEndElement(); // Row
+                // Данные
+                if (!query.exec(QString("SELECT * FROM tbl_people")))
+                {
+                    QMessageBox::critical(this, tr("Помилка"),tr("Помилка доступу до бази даних!"), QMessageBox::Ok);
+                    qDebug() << query.lastError();
+                    file.close();
+                    return;
+                }
+                while (query.next())
+                {
+                    stream.writeStartElement("ss:Row");
+                    for (int i = 0; i < 30; i++)
+                    {
+                        stream.writeStartElement("ss:Cell");
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                                stream.writeCDATA(query.value(i + 1).toString());
+                            stream.writeEndElement(); // Data
+                        stream.writeEndElement(); // Cell
+                    }
+                    stream.writeEndElement(); // Row
+                }
+
+            stream.writeEndElement(); // Table
+        stream.writeEndElement(); // Worksheet
 
     for (int i = 0; i < 6; i++)
     {
