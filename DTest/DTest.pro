@@ -27,7 +27,8 @@ SOURCES += main.cpp\
     test5dialog.cpp \
     test0dialog.cpp \
     getpatientdialog.cpp \
-    test6dialog.cpp
+    test6dialog.cpp \
+    checkboxlist.cpp
 
 HEADERS  += mainwindow.h \
     test1dialog.h \
@@ -41,7 +42,8 @@ HEADERS  += mainwindow.h \
     test5dialog.h \
     test0dialog.h \
     getpatientdialog.h \
-    test6dialog.h
+    test6dialog.h \
+    checkboxlist.h
 
 FORMS    += mainwindow.ui \
     test1dialog.ui \

@@ -114,6 +114,24 @@ void Test0Dialog::setCBValue(QComboBox* cb,QString text)
     cb->setCurrentIndex(cb->count() - 1);
 }
 
+void Test0Dialog::setCBValueImpact(QString text)
+{
+    QString qw[] = {
+                     "не влияет",
+                     "влияет на физическую деятельность",
+                     "на выполнение професиональных обязанностей",
+                     "психологический дискомфорт",
+                     "нарушение социального общения",
+                     "на общение с противоположным полом",
+                     "на сексуальный комфорт",
+                     "на состояние здоровья"
+                   };
+
+
+    ui->cbImpact->clear();
+    for (int i = 0; i < 8; i++)
+        ui->cbImpact->addItem(qw[i], text.indexOf(qw[i]) != -1 ? QVariant(true) : QVariant(false));
+}
 
 void Test0Dialog::initDialog(int id)
 {
@@ -151,7 +169,7 @@ void Test0Dialog::initDialog(int id)
         setCBValue(ui->cbEffect,query.value(25).toString());
         ui->leMaxWeight->setText(query.value(26).toString());
         ui->leMinWeight->setText(query.value(27).toString());
-        setCBValue(ui->cbImpact,query.value(28).toString());
+        setCBValueImpact(query.value(28).toString());
         setCBValue(ui->cbWant,query.value(29).toString());
         setCBValue(ui->cbReady,query.value(30).toString());
 //        ui->cbMerried->setCurrentText(query.value(10).toString());
@@ -224,7 +242,8 @@ void Test0Dialog::accept(void)
             lifestyle = ui->cbLifestyle->currentText(),
             attempts = ui->cbAttempts->currentText(),
             effect = ui->cbEffect->currentText(),
-            impact = ui->cbImpact->currentText(),
+//            impact = ui->cbImpact->currentText(),
+            impact = ui->cbImpact->getDisplayText(),
             want = ui->cbWant->currentText(),
             ready = ui->cbReady->currentText();
     int age = ui->sbAge->text().toInt(),

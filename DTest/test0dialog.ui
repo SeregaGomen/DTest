@@ -1365,7 +1365,7 @@
    <property name="title">
     <string>Влияние веса на жизнь пациента</string>
    </property>
-   <widget class="QComboBox" name="cbImpact">
+   <widget class="CheckBoxList" name="cbImpact">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -1542,6 +1542,13 @@
    </widget>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CheckBoxList</class>
+   <extends>QComboBox</extends>
+   <header>checkboxlist.h</header>
+  </customwidget>
+ </customwidgets>
  <tabstops>
   <tabstop>leName</tabstop>
   <tabstop>cbSex</tabstop>

@@ -35,6 +35,7 @@ private:
     int id_people;
     bool checkData(void);
     void setCBValue(QComboBox*,QString);
+    void setCBValueImpact(QString);
 };
 
 #endif // TEST0DIALOG_H

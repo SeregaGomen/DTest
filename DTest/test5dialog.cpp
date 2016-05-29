@@ -215,9 +215,9 @@ bool Test5Dialog::calcRes(QString& s_res)
             QMessageBox::information(this, tr("Помилка"), tr("Не задана відповіднь на питання: %1!").arg(i + 1));
             return false;
         }
-        if (((i >= 0 && i < 8) || (i >= 9 && i < 11) || (i >= 13 && i <= 17) || (i >= 19 && i <= 27)) && rb[i][0]->isChecked())
+        if (((i >= 0 && i < 8) || (i >= 9 && i <= 11) || (i >= 13 && i <= 17) || (i >= 19 && i <= 27)) && rb[i][0]->isChecked())
             res++;
-        if (!((i >= 0 && i < 8) || (i >= 9 && i < 11) || (i >= 13 && i <= 17) || (i >= 19 && i <= 27)) && rb[i][1]->isChecked())
+        if (!((i >= 0 && i < 8) || (i >= 9 && i <= 11) || (i >= 13 && i <= 17) || (i >= 19 && i <= 27)) && rb[i][1]->isChecked())
             res++;
         if (i == 28)
         {
