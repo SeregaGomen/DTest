@@ -373,6 +373,11 @@
       <string>вдовец</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_12">
@@ -416,6 +421,11 @@
       <string>более 6 тыс.</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_13">
@@ -455,6 +465,11 @@
     <item>
      <property name="text">
       <string>высшее</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
      </property>
     </item>
    </widget>
@@ -710,6 +725,11 @@
       <string>... более 500 мл</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_17">
@@ -810,6 +830,11 @@
     <item>
      <property name="text">
       <string>курсами по поводу хронического заболевания</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
      </property>
     </item>
    </widget>
@@ -975,6 +1000,11 @@
       <string>есть</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_22">
@@ -1034,6 +1064,11 @@
     <item>
      <property name="text">
       <string>с детства</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
      </property>
     </item>
    </widget>
@@ -1224,6 +1259,11 @@
       <string>многократно</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_26">
@@ -1288,6 +1328,11 @@
     <item>
      <property name="text">
       <string>более 3 лет</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
      </property>
     </item>
    </widget>
@@ -1417,6 +1462,11 @@
       <string>на состояние здоровья</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_30">
@@ -1493,6 +1543,11 @@
       <string>готов к применению терапевтических мероприятий</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_31">
@@ -1537,6 +1592,11 @@
     <item>
      <property name="text">
       <string>готов полностью</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
      </property>
     </item>
    </widget>

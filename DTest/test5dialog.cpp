@@ -145,6 +145,11 @@ void Test5Dialog::accept(void)
 
 bool Test5Dialog::calcRes(QString& s_res)
 {
+    int ads = 0,
+        add = 0,
+        mt = 0,
+        zdv = 0,
+        sb = 0;
     QString sex;
     bool isChoised;
     QSqlQuery query;
@@ -182,7 +187,14 @@ bool Test5Dialog::calcRes(QString& s_res)
 
     query.exec(QString("SELECT * FROM tbl_people WHERE id = '%1'").arg(id_people));
     while (query.next())
+    {
         sex = query.value(2).toString().toUpper();
+        mt = query.value(5).toInt();
+        ads = query.value(6).toInt();
+        add = query.value(7).toInt();
+        sb = query.value(8).toInt();
+        zdv = query.value(9).toInt();
+    }
 
 
     s_res = "";
@@ -228,9 +240,9 @@ bool Test5Dialog::calcRes(QString& s_res)
         }
     }
     if (sex == "МУЖ.")
-        res = 0.629*float(res) + 18.56;
+        res = 26.985 + 0.215*ads - 0.149*zdv - 0.151*sb + 0.723*(0.629*float(res) + 18.56);
     else
-        res = 0.581*float(res) + 17.24;
+        res = -1.463 + 0.415*(ads - add) - 0.140*sb + 0.248*mt + 0.694*(0.581*float(res) + 17.24);
     return true;
 }
 
