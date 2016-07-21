@@ -155,7 +155,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>97</width>
+      <width>81</width>
       <height>22</height>
      </rect>
     </property>
@@ -171,7 +171,7 @@
      <rect>
       <x>10</x>
       <y>40</y>
-      <width>97</width>
+      <width>81</width>
       <height>22</height>
      </rect>
     </property>
@@ -185,9 +185,9 @@
    <widget class="QCheckBox" name="cbSex">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>100</x>
       <y>20</y>
-      <width>97</width>
+      <width>81</width>
       <height>22</height>
      </rect>
     </property>
@@ -201,9 +201,9 @@
    <widget class="QCheckBox" name="cbDate">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>190</x>
       <y>40</y>
-      <width>97</width>
+      <width>81</width>
       <height>22</height>
      </rect>
     </property>
@@ -217,9 +217,9 @@
    <widget class="QCheckBox" name="cbResult">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>290</x>
       <y>20</y>
-      <width>97</width>
+      <width>81</width>
       <height>22</height>
      </rect>
     </property>
@@ -230,12 +230,44 @@
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QCheckBox" name="cbHeight">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ріст</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbWeight">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Вага</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
    <widget class="QCheckBox" name="cbLegend">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>290</x>
       <y>40</y>
-      <width>97</width>
+      <width>81</width>
       <height>22</height>
      </rect>
     </property>

@@ -598,6 +598,26 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                                 stream.writeEndElement(); // Data
                             stream.writeEndElement(); // Cell
                         }
+                        //
+                        if (map["Weight"] == true)
+                        {
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                    stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA("Вага");
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
+                        if (map["Height"] == true)
+                        {
+                            stream.writeStartElement("ss:Cell");
+                                stream.writeStartElement("ss:Data");
+                                    stream.writeAttribute("ss:Type","String");
+                                    stream.writeCDATA("Ріст");
+                                stream.writeEndElement(); // Data
+                            stream.writeEndElement(); // Cell
+                        }
+                        //
                         if (map["Date"] == true)
                         {
                             stream.writeStartElement("ss:Cell");
@@ -690,7 +710,7 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                 // Данные
                 if (i == 0)
                 {
-                    if (!query.exec(QString("SELECT f_name,f_sex,f_age,f_dt,f_res11,f_legend11,f_res12,f_legend12,f_res13,f_legend13 FROM tbl_results,tbl_people WHERE tbl_people.id = tbl_results.f_people ")))
+                    if (!query.exec(QString("SELECT f_name,f_sex,f_age,f_dt,f_res11,f_legend11,f_res12,f_legend12,f_res13,f_legend13,f_weight,f_height FROM tbl_results,tbl_people WHERE tbl_people.id = tbl_results.f_people ")))
                     {
                         QMessageBox::critical(this, tr("Помилка"),tr("Помилка доступу до бази даних!"), QMessageBox::Ok);
                         qDebug() << query.lastError();
@@ -700,7 +720,7 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                 }
                 else
                 {
-                    if (!query.exec(QString("SELECT f_name,f_sex,f_age,f_dt,f_res%1,f_legend%1 FROM tbl_results,tbl_people WHERE tbl_people.id = tbl_results.f_people ").arg(i + 1)))
+                    if (!query.exec(QString("SELECT f_name,f_sex,f_age,f_dt,f_res%1,f_legend%1,f_weight,f_height FROM tbl_results,tbl_people WHERE tbl_people.id = tbl_results.f_people ").arg(i + 1)))
                     {
                         QMessageBox::critical(this, tr("Помилка"),tr("Помилка доступу до бази даних!"), QMessageBox::Ok);
                         qDebug() << query.lastError();
@@ -738,6 +758,36 @@ void MainWindow::export2XML(QString fileName,QMap<QString,bool> map)
                             stream.writeEndElement(); // Data
                         stream.writeEndElement(); // Cell
                     }
+                    //
+                    if (map["Weight"] == true)
+                    {
+                        stream.writeStartElement("ss:Cell");
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                                stream.writeCDATA(query.value(i == 0 ? 10 : 6).toString());
+                            stream.writeEndElement(); // Data
+                        stream.writeEndElement(); // Cell
+                    }
+                    if (map["Height"] == true)
+                    {
+                        stream.writeStartElement("ss:Cell");
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                                stream.writeCDATA(query.value(i == 0 ? 11 : 7).toString());
+                            stream.writeEndElement(); // Data
+                        stream.writeEndElement(); // Cell
+                    }
+                    //
+                    if (map["Date"] == true)
+                    {
+                        stream.writeStartElement("ss:Cell");
+                            stream.writeStartElement("ss:Data");
+                            stream.writeAttribute("ss:Type","String");
+                                stream.writeCDATA(query.value(3).toString());
+                            stream.writeEndElement(); // Data
+                        stream.writeEndElement(); // Cell
+                    }
+                    //
                     if (map["Date"] == true)
                     {
                         stream.writeStartElement("ss:Cell");

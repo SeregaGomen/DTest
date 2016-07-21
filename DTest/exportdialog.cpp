@@ -19,6 +19,8 @@ ExportDialog::ExportDialog(QWidget *parent) :
     connect(ui->cbDate, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
     connect(ui->cbLegend, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
     connect(ui->cbResult, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
+    connect(ui->cbWeight, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
+    connect(ui->cbHeight, SIGNAL(clicked(bool)), this, SLOT(slotCBClicked(bool)));
 }
 
 ExportDialog::~ExportDialog()
@@ -29,7 +31,8 @@ ExportDialog::~ExportDialog()
 void ExportDialog::slotCBClicked(bool)
 {
     bool isTest = ui->cbTest1->isChecked() || ui->cbTest2->isChecked() || ui->cbTest3->isChecked() || ui->cbTest4->isChecked() || ui->cbTest5->isChecked() || ui->cbTest6->isChecked(),
-         isFields = ui->cbName->isChecked() || ui->cbSex->isChecked() || ui->cbDate->isChecked() || ui->cbAge->isChecked() || ui->cbResult->isChecked() || ui->cbLegend->isChecked();
+         isFields = ui->cbName->isChecked() || ui->cbSex->isChecked() || ui->cbDate->isChecked() || ui->cbAge->isChecked() || ui->cbResult->isChecked() || ui->cbLegend->isChecked() ||
+                    ui->cbWeight->isChecked() || ui->cbHeight->isChecked();
 
     ui->buttonBox->button(QDialogButtonBox::Ok)->setEnabled(isTest && isFields);
 }
@@ -51,6 +54,8 @@ QMap<QString,bool> ExportDialog::getMap(void)
     map["Date"] = ui->cbDate->isChecked();
     map["Result"] = ui->cbResult->isChecked();
     map["Legend"] = ui->cbLegend->isChecked();
+    map["Weight"] = ui->cbWeight->isChecked();
+    map["Height"] = ui->cbHeight->isChecked();
 
     return map;
 }
